@@ -1,0 +1,107 @@
+.banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+
+    .inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding-top: 132px;
+      height: 100%;
+      width: 75.3125%;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.5s ease-out;
+      transition-delay: .1s;
+     &.in-view {
+        opacity: 1;
+        transform: translateY(0);
+    }
+      .title {
+        //styleName: Web:Banner Title_v01;
+        font-family: Work Sans;
+        font-size: 58px;
+        font-weight: 350;
+        line-height: 62px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        color: #FFF;
+        margin-bottom: 62px;
+       
+    
+    }
+      .sub-title {
+        //styleName: Web : Content;
+        font-family: Work Sans;
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        color: #FFF;
+       
+    
+      }
+    }
+  }
+
+  @media (max-width: 1005px) {
+    .banner {
+  
+        .inner {
+          width: 578px;
+          padding-top: 132px;
+  
+          .title {
+            font-size: 52px;
+            font-weight: 350;
+            line-height: 55px;
+            letter-spacing: -0.03em;
+            margin-bottom: 30px;
+  
+          }
+  
+          .sub-title {
+            //styleName: Tab:Content;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 36px;
+            letter-spacing: -0.03em;
+  
+          }
+        }
+      }
+  }
+
+
+  @media (max-width:767px) {
+    .banner {
+
+      .inner {
+        width: 76.5625%;
+        padding-top: 2.3125rem;   //padding-top: 6.3125rem;
+
+        .title {
+          font-size: 2.525rem;
+          font-weight: 350;
+          line-height: 2.8rem;
+          letter-spacing: -0.03em;
+          margin-bottom: 1.875rem;
+
+        }
+
+        .sub-title {
+          font-size: 1rem;
+          font-weight: 300;
+          line-height: 1.7rem;
+          letter-spacing: -0.03em;
+
+        }
+      }
+    }
+  }
