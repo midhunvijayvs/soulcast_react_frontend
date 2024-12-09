@@ -59,7 +59,7 @@ const MessagePopup = (props) => {
                         </button>
                     }
                 </div>
-                <img className='banner-icon' src='/images/sub-pages-banner-icon.svg' 
+                <img className='banner-icon' src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/sub-pages-banner-icon.svg`} 
                     style={window.innerWidth > 992 ? { top: props.iconTopWeb, left: props.iconLeftWeb, transform: `rotate(${props.iconRotationWeb}deg)` } : 
                     window.innerWidth > 767 ? { top: props.iconTopTab, left: props.iconLeftTab, transform: `rotate(${props.iconRotationTab}deg)` } : 
                     { top: props.iconTopMob, left: props.iconLeftMob, transform: `rotate(${props.iconRotationMob}deg)` }}>

@@ -518,7 +518,7 @@ const LandingPage = () => {
                     return (
                       <div className='card' key={index}>
                         <div className='icon'>
-                          <img src={`/images/landing-page/sec-2/${index + 1}.svg`}></img>
+                          <img src={`/images/landing-page/sec-2/${index + 1}.svg`}}></img>
                         </div>
                         <div className='card-title' dangerouslySetInnerHTML={renderHTML(item.title)}></div>
                       </div>

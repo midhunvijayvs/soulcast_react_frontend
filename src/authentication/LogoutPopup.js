@@ -36,7 +36,7 @@ const LocationCollectionPopup = ({setterFunction}) => {
             <div className='card'>
                
                     <div className='first-screen'>
-                        <img src='/images/authentication-screens/logout-popup-icon.svg'></img>
+                        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/authentication-screens/logout-popup-icon.svg`}></img>
                         <h1>Logout</h1>
                         <p>Are you sure you want to logout?</p>
                         

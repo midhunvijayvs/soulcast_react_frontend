@@ -43,7 +43,7 @@ const Header = ({ userData, isLoggedIn }) => {
                 
                     <div className="btn-box">
                         <button className="btn btn-borderless" onClick={() => { }}>
-                            <img src='/images/admin-panel/header/notification.svg'></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/header/notification.svg`}></img>
                         </button>
                        
                     </div>

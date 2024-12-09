@@ -14,7 +14,7 @@ const InvoicePreview = ( {visibleFields} ) => {
     <div className='invoice-preview'>
         <div className='title-header'>
             <div className='app-logo'>
-                <img src='/images/admin-panel/app-logo.svg' alt=''></img>
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/app-logo.svg`} alt=''></img>
             </div>
             <div className='title'>
                 <h1>Soulcast Ltd</h1>

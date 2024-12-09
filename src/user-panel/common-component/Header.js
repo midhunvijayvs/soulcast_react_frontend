@@ -121,8 +121,8 @@ setCurrentPageIndex(localStorage.getItem("currentPageIndex"))
         <span onClick={()=>{localStorage.setItem("currentPageIndex",6);setCurrentPageIndex(6); navigate("/insights")}} className={currentPageIndex===6&&"active"}>INSIGHTS</span>
         <span onClick={()=>{localStorage.setItem("currentPageIndex",7);setCurrentPageIndex(7); navigate("/contact-us")}} className={currentPageIndex===7&&"active"}>CONTACT</span>
       </div>
-      <button className='login-btn' onClick={() => { localStorage.setItem("userRoleRequest", "user"); localStorage.setItem('LoginRedirectURL', `/`); navigate('/login') }}><img src='/images/header/login-icon.svg'></img></button>
-      <button className='hamburger-btn' onClick={() => setNavPaneOpen(true)}><img src='/images/header/hamburger-icon.svg'></img></button>
+      <button className='login-btn' onClick={() => { localStorage.setItem("userRoleRequest", "user"); localStorage.setItem('LoginRedirectURL', `/`); navigate('/login') }}><img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/header/login-icon.svg`}></img></button>
+      <button className='hamburger-btn' onClick={() => setNavPaneOpen(true)}><img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/header/hamburger-icon.svg`}></img></button>
 
 
 

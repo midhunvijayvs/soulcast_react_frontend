@@ -166,11 +166,11 @@ const InvoiceSendPopup = ({ title, state, setterFunction, okClickedFunction,form
                     <button type='button'  className='admin-blue-btn send'>Send Invoice</button>
                     <div className='btns-2'>
                         <button type='button'  className=''>
-                            <img src='/images/admin-panel/invoices/download.svg' ></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/invoices/download.svg`} ></img>
                             Download
                         </button>
                         <button type='button'  className=''>
-                            <img src='/images/admin-panel/invoices/print.svg' ></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/invoices/print.svg`} ></img>
                             Print
                         </button>
                     </div>

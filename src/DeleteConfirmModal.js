@@ -23,7 +23,7 @@ const DeleteConfirmModal = ({ resourceName, setterFunction, onDeleteFunction }) 
             <div className='card'>
                
                     <div className='first-screen'>
-                        <img src='/images/delete-popup-icon.svg'></img>
+                        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/delete-popup-icon.svg`}></img>
                         <h1>Delete</h1>
                         <p>Are you sure you want to Delete?</p>
                         

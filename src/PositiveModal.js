@@ -14,7 +14,7 @@ const okClicked=()=>{
             <div className='card'>
                
                     <div className='first-screen'>
-                        {/* <img src='/images/positive-popup-icon.svg'></img> */}
+                        {/* <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/positive-popup-icon.svg`}></img> */}
                         <h1>{title?title:"Success!"}</h1>
                         <p>{message?message:"Changes Saved Successfully"}</p>
                         

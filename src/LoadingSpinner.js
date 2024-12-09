@@ -16,7 +16,7 @@ style={{
 {/* <div className="spinner-border" role="status">
   <span className="sr-only "></span>
 </div> */}
-<img style={{height:"40px"}} src='/images/loader.gif'></img>
+<img style={{height:"40px"}} src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/loader.gif`}></img>
 </div>
     )
 } 

@@ -68,7 +68,7 @@ export class Overview extends Component {
                       <div className='f-xl black-clr mt-2 me-2'><b>1500</b></div>
                   </div>
                   <div>
-                      <img src="/images/Overview/totaluser.svg'" alt='' className='total-img'></img>
+                      <img src="/images/Overview/totaluser.svg`}" alt='' className='total-img'></img>
                   </div>
               </div>
               <div className='bg-white box-shadow p-3 radius-7 d-flex justify-content-between align-items-center w-100div3 mx-0 mx-md-3 my-3 my-md-0'>
@@ -88,7 +88,7 @@ export class Overview extends Component {
                       <div className='f-xl black-clr me-2 mt-2'><b>68</b></div>
                   </div>
                   <div>
-                    <img src="/images/Overview/totalsale.svg'" alt='' className='total-img'></img>
+                    <img src="/images/Overview/totalsale.svg`}" alt='' className='total-img'></img>
                   </div>
               </div>
           </div>

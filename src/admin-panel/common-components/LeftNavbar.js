@@ -243,7 +243,7 @@ export default function LeftNavbar() {
                     navList[catNavSelected].items.map((item, index) => {
                         return (
                             <div className='item' key={index} onClick={() => navigate(item.frontend_url)}>
-                                <img src='/images/admin-panel/left-nav-bar/item-arrow.svg'></img>
+                                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/left-nav-bar/item-arrow.svg`}></img>
                                 <div className='label'>{item.label}</div>
                             </div>
                         );

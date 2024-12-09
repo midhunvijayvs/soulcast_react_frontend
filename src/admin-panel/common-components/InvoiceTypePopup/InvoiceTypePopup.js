@@ -28,7 +28,7 @@ const InvoiceTypePopup = ({ message,title, state, setterFunction, okClickedFunct
                     </button>
                 </div>
                 <div className='first-screen'>
-                    {/* <img src='/images/positive-popup-icon.svg'></img> */}
+                    {/* <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/positive-popup-icon.svg`}></img> */}
                     <h1>Select Invoice Type</h1>
                     <p>What type of invoice would you like<br/> to create?</p>
                     

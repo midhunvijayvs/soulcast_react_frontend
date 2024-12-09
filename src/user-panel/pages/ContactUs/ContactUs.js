@@ -256,7 +256,7 @@ const View = () => {
       </Banner>
       <div className='scroll-btn-container'>
         <button className='scroll-down-btn' onClick={scrollToDiv}>Get Support Now
-          <img src='/images/contact-us/scroll-down.gif'></img></button>
+          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/contact-us/scroll-down.gif`}></img></button>
 
       </div>
       <div className='sec-2'>
@@ -409,7 +409,7 @@ const View = () => {
                   <div class="custom-select" id="category" name="category"
                     onClick={() => toggleOptionList(!optionListOpened)} >
                     <div className="selected-value">{formData.category ? formData.category : "Select Enquiry Type"}
-                      <img className='arrow' src='/images/contact-us/drop-down-arrow.svg'></img>
+                      <img className='arrow' src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/contact-us/drop-down-arrow.svg`}></img>
                     </div>
                     <div className='option-list'>
                       <div className='option' onClick={() => selectCategory("General Enquiry")}>General Enquiry</div>

@@ -606,7 +606,7 @@ const InvoiceCreate = ( {invoiceType} ) => {
                               ))}
                               <td className='text-center'>
                                 <img 
-                                  src='/images/admin-panel/icon-arrow-down.svg' 
+                                  src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/icon-arrow-down.svg`} 
                                   alt='' 
                                   className={`toggle-icon ${expandedRows[index] ? 'rotate' : ''}`}
                                   onClick={() => handleToggle(index)}

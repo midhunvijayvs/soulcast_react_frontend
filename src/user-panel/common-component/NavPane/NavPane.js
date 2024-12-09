@@ -36,8 +36,8 @@ const NavPane = ({ setterFunction }) => {
         <div className='nav-pane'>
             <div className='header'>
                 <img className='app-logo' onClick={() => navigate('/')} role='button' src="/images/nav-pane/app-logo-header.svg" alt=''></img>
-                <button className='login-btn' onClick={() => { localStorage.setItem("userRoleRequest", "user"); navigate('/login') }}><img src='/images/nav-pane/header-login-icon.svg'></img></button>
-                <button className='close-btn' onClick={() => setterFunction(false)}><img src='/images/nav-pane/close-icon.svg'></img></button>
+                <button className='login-btn' onClick={() => { localStorage.setItem("userRoleRequest", "user"); navigate('/login') }}><img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/nav-pane/header-login-icon.svg`}></img></button>
+                <button className='close-btn' onClick={() => setterFunction(false)}><img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/nav-pane/close-icon.svg`}></img></button>
                 {/* {isLogoutModalShow && <LogoutPopup setterFunction={setLogoutModalShow}></LogoutPopup>} */}
             </div>
             <div className='body'>
@@ -109,27 +109,27 @@ const NavPane = ({ setterFunction }) => {
                     <div className='heading'>STORIES</div>
                     <div className='story-box'>
                         <div className='tile'>
-                            <img src='/images/nav-pane/story-1.png'></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/nav-pane/story-1.png`}></img>
                             <p>{blogData&&blogData[0].title}</p>
                         </div>
 
                         <div className='tile'>
-                            <img src='/images/nav-pane/story-1.png'></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/nav-pane/story-1.png`}></img>
                             <p>{blogData&&blogData[1].title}</p>
                         </div>
 
                         <div className='tile'>
-                            <img src='/images/nav-pane/story-1.png'></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/nav-pane/story-1.png`}></img>
                             <p>{blogData&&blogData[2].title}</p>
                         </div>
 
                         <div className='tile'>
-                            <img src='/images/nav-pane/story-1.png'></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/nav-pane/story-1.png`}></img>
                             <p>{blogData&&blogData[3].title}</p>
                         </div>
 
                         <div className='tile'>
-                            <img src='/images/nav-pane/story-1.png'></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/nav-pane/story-1.png`}></img>
                             <p>{blogData&&blogData[4].title}</p>
                         </div>
 

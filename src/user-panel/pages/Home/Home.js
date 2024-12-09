@@ -246,7 +246,7 @@ const Userhome = ({ userData, loadUserData }) => {
 
           <div className='section top-section'>
             <div className='lhs'>
-              <img src='/images/resume-preview-page/profile-image.png'></img>
+              <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/profile-image.png`}></img>
             </div>
             <div className='rhs'>
               <div className='name'>{data.name}</div>
@@ -324,7 +324,7 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/skills.svg'></img>
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/skills.svg`}></img>
                 <h1>Skills</h1>
               </div>
 
@@ -337,7 +337,7 @@ const Userhome = ({ userData, loadUserData }) => {
                   </div>
 
                   <div className='rhs'>
-                    <img src='/images/resume-preview-page/timeline-bullet.svg'></img>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/timeline-bullet.svg`}></img>
 
                     <div className='center-part'>
                       <p className='text'>{item}</p>
@@ -365,7 +365,7 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/work-history.svg'></img>
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/work-history.svg`}></img>
                 <h1>Work History</h1>
               </div>
 
@@ -379,7 +379,7 @@ const Userhome = ({ userData, loadUserData }) => {
                   </div>
 
                   <div className='rhs'>
-                    <img src='/images/resume-preview-page/timeline-bullet.svg'></img>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/timeline-bullet.svg`}></img>
                     <div className='center-part'>
                       <h2 className='text'>{item.title}</h2>
                       <p className='text'><strong>{item.company}</strong>, {item.company_city}, {item.company_state}, {item.company_country}</p>
@@ -409,7 +409,7 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/education.svg'></img>
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/education.svg`}></img>
                 <h1>Education</h1>
               </div>
 
@@ -423,7 +423,7 @@ const Userhome = ({ userData, loadUserData }) => {
                   </div>
 
                   <div className='rhs'>
-                    <img src='/images/resume-preview-page/timeline-bullet.svg'></img>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/timeline-bullet.svg`}></img>
                     <div className='center-part'>
                       <h2 className='text'>{item.title}</h2>
                       <p className='text'><strong>{item.company}</strong>, {item.company_city}, {item.company_state}, {item.company_country}</p>
@@ -453,7 +453,7 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/certifications.svg'></img>
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/certifications.svg`}></img>
                 <h1>Certifications</h1>
               </div>
 
@@ -467,7 +467,7 @@ const Userhome = ({ userData, loadUserData }) => {
                   </div>
 
                   <div className='rhs'>
-                    <img src='/images/resume-preview-page/timeline-bullet.svg'></img>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/timeline-bullet.svg`}></img>
                     <div className='center-part'>
                       <h2 className='text'>{item.title}</h2>
                       <p className='text'><strong>{item.company}</strong>, {item.company_city}, {item.company_state}, {item.company_country}</p>
@@ -497,7 +497,7 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/accomplishments.svg'></img>
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/accomplishments.svg`}></img>
                 <h1>Accomplishments</h1>
               </div>
 
@@ -511,7 +511,7 @@ const Userhome = ({ userData, loadUserData }) => {
                   </div>
 
                   <div className='rhs'>
-                    <img src='/images/resume-preview-page/timeline-bullet.svg'></img>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/timeline-bullet.svg`}></img>
                     <div className='center-part'>
                       <h2 className='text'>{item.title}</h2>
                       <p className='text'><strong>{item.company}</strong>, {item.company_city}, {item.company_state}, {item.company_country}</p>
@@ -542,7 +542,7 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/hobbies.svg'></img>
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/hobbies.svg`}></img>
                 <h1>Hobbies</h1>
               </div>
 
@@ -556,7 +556,7 @@ const Userhome = ({ userData, loadUserData }) => {
                   </div>
 
                   <div className='rhs'>
-                    <img src='/images/resume-preview-page/timeline-bullet.svg'></img>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/timeline-bullet.svg`}></img>
                     <div className='center-part'>
                       <h2 className='text'>{item.title}</h2>
                       <p className='text'><strong>{item.company}</strong>, {item.company_city}, {item.company_state}, {item.company_country}</p>

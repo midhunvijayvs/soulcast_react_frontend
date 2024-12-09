@@ -15,7 +15,7 @@ const CustomDatePicker = ({selected, onChange,dateFormat ,placeholder,minDate ,s
       };
   return (
     <div className="custom-date">
-    <img className='calendar-icon' src='/images/admin-panel/dashboard/calendar.svg'></img>
+    <img className='calendar-icon' src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/dashboard/calendar.svg`}></img>
     <DatePicker dateFormat={dateFormat}  placeholderText={placeholder}
         selected={selected}
         onChange={handleDateChange}
