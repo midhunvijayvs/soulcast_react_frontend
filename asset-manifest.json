@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/soulcast_react_frontend/static/css/main.b8279d37.css",
-    "main.js": "/soulcast_react_frontend/static/js/main.ecc5ca26.js",
+    "main.js": "/soulcast_react_frontend/static/js/main.93e45e14.js",
     "static/js/453.a2a63e3f.chunk.js": "/soulcast_react_frontend/static/js/453.a2a63e3f.chunk.js",
     "static/media/WorkSans-VariableFont_wght.ttf": "/soulcast_react_frontend/static/media/WorkSans-VariableFont_wght.a0297787a1a192213b53.ttf",
     "static/media/WorkSans-Italic-VariableFont_wght.ttf": "/soulcast_react_frontend/static/media/WorkSans-Italic-VariableFont_wght.909e4faac8822880e462.ttf",
@@ -10,11 +10,11 @@
     "static/media/prev-arrow-black-web.svg": "/soulcast_react_frontend/static/media/prev-arrow-black-web.a52124b7fc586ca7b41e.svg",
     "static/media/next-arrow-black-web.svg": "/soulcast_react_frontend/static/media/next-arrow-black-web.57b322f8a1f8195ba6a0.svg",
     "main.b8279d37.css.map": "/soulcast_react_frontend/static/css/main.b8279d37.css.map",
-    "main.ecc5ca26.js.map": "/soulcast_react_frontend/static/js/main.ecc5ca26.js.map",
+    "main.93e45e14.js.map": "/soulcast_react_frontend/static/js/main.93e45e14.js.map",
     "453.a2a63e3f.chunk.js.map": "/soulcast_react_frontend/static/js/453.a2a63e3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b8279d37.css",
-    "static/js/main.ecc5ca26.js"
+    "static/js/main.93e45e14.js"
   ]
 }
