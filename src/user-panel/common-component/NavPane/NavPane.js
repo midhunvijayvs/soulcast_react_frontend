@@ -43,7 +43,7 @@ const NavPane = ({ setterFunction }) => {
             <div className='body'>
                 <div className='lhs'>
                     <ul>
-                        <li onClick={() => { navigate("/why-zog-global"); setterFunction(false) }}>WHY ZOG GLOBAL</li>
+                        <li onClick={() => { navigate("/why-zog-global"); setterFunction(false) }}>WHY SOULCAST</li>
                         <li onClick={() => { navigate("/what-we-do"); setterFunction(false) }}>WHAT WE DO</li>
                         <li onClick={() => { navigate("/transform-your-business"); setterFunction(false) }}>TRANSFORM YOUR BUSINESS</li>
                         <li onClick={() => { navigate("/protect-your-customers-data"); setterFunction(false) }}>PROTECT YOUR CUSTOMERS DATA</li>
@@ -185,7 +185,7 @@ const NavPane = ({ setterFunction }) => {
 
 
                     </div>
-                    <div className='copyright-text'>© 2024 ZOG GLOBAL</div>
+                    <div className='copyright-text'>© 2024 SOULCAST</div>
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@ import { UserContext } from '../../authentication/pages/UserContext';
 
 
 import Home from '../pages/Home/Home';
+import ResumePreview from '../pages/ResumePreview/ResumePreview';
 import ContactUs from '../pages/ContactUs/ContactUs';
 
 
@@ -119,6 +120,7 @@ const Layout = () => {
           <Route index element={<Navigate to="/home" />} />
           <Route path="home" element={<Home/>} />
           
+          <Route path="resume-preview" element={<ResumePreview />} />
           <Route path="contact-us" element={<ContactUs />} />
 
 
