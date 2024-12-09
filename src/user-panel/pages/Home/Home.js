@@ -30,7 +30,7 @@ const Userhome = ({ userData, loadUserData }) => {
 
   const data = {
     name: "midhun vijay v s",
-    title: "Exceptional Technical Aptitude, Innovative Architectural Vision, 2year and 6 Year Full Time Industrial Experience + 3 Months training course + 3 Years Hobby Freelance Experience.",
+    title: "Exceptional Technical Aptitude, Innovative Architectural Vision, 2year and 11 months Full Time Industrial Experience + 3 Months training course + 3 Years Hobby Freelance Experience.",
     email: "midhunvijayvs@gmail.com",
     phone: "+919605556054",
     house_name: "Saketham",
@@ -365,7 +365,7 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/skills.svg'></img>
+                <img src='/images/resume-preview-page/work-history.svg'></img>
                 <h1>Work History</h1>
               </div>
 
@@ -409,7 +409,7 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/skills.svg'></img>
+                <img src='/images/resume-preview-page/education.svg'></img>
                 <h1>Education</h1>
               </div>
 
@@ -453,13 +453,13 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/skills.svg'></img>
-                <h1>Skills</h1>
+                <img src='/images/resume-preview-page/certifications.svg'></img>
+                <h1>Certifications</h1>
               </div>
 
             </div>
 
-            {data && data.soft_skills.map((item, index) => {
+            {data && data.certifications.map((item, index) => {
               return (
                 <div className='timeline-segment'>
                   <div className='lhs'>
@@ -497,7 +497,7 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/skills.svg'></img>
+                <img src='/images/resume-preview-page/accomplishments.svg'></img>
                 <h1>Accomplishments</h1>
               </div>
 
@@ -542,7 +542,7 @@ const Userhome = ({ userData, loadUserData }) => {
               </div>
 
               <div className='rhs'>
-                <img src='/images/resume-preview-page/skills.svg'></img>
+                <img src='/images/resume-preview-page/hobbies.svg'></img>
                 <h1>Hobbies</h1>
               </div>
 
