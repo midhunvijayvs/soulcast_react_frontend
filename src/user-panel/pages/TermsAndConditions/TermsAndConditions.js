@@ -42,7 +42,7 @@ const TermsAndConditions = () => {
             <div className='sec-2'>
                 <div className='privacy-head'>
                     <div className='title'>Terms & Conditions </div>
-                    <p className='title-para'>These Terms & Conditions ("Agreement") are entered into by and between ZOG Global ("Company") and the individual or entity requesting the services ("Client"). This Agreement governs the use of the IT services provided by the Company to the Client. By engaging in any transaction or utilizing any of the services provided by the Company, the Client agrees to be bound by this Agreement.  </p>
+                    <p className='title-para'>These Terms & Conditions ("Agreement") are entered into by and between Soulcast ("Company") and the individual or entity requesting the services ("Client"). This Agreement governs the use of the IT services provided by the Company to the Client. By engaging in any transaction or utilizing any of the services provided by the Company, the Client agrees to be bound by this Agreement.  </p>
                 </div>
                 <div className='scope'>
                     <div className='title'>1. Services Provided </div>
@@ -165,7 +165,7 @@ const TermsAndConditions = () => {
             <div className='footer-sec'>
                 <div className='footer-content'>
                     <li onClick={() => navigate(window.location.pathname)} className='link'>Terms and Conditions</li>
-                    <li>© 2024 ZOG Global</li>
+                    <li>© 2024 Soulcast</li>
                 </div>
             </div>
         </div>

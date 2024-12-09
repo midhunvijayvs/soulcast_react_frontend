@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
             <div className='sec-2'>
                 <div className='privacy-head'>
                     <div className='title'>Privacy Policy</div>
-                    <p className='title-para'>At ZOG Global, we value the privacy and security of our customers' personal information. This Privacy Policy outlines how we collect, use, and protect the information you provide to us when using our IT services. By using our services, you agree to the terms of this Privacy Policy. </p>
+                    <p className='title-para'>At Soulcast, we value the privacy and security of our customers' personal information. This Privacy Policy outlines how we collect, use, and protect the information you provide to us when using our IT services. By using our services, you agree to the terms of this Privacy Policy. </p>
                 </div>
                 <div className='scope'>
                     <div className='title'>Information Collection </div>
@@ -119,7 +119,7 @@ const PrivacyPolicy = () => {
             <div className='footer-sec'>
                 <div className='footer-content'>
                     <li onClick={() => navigate(window.location.pathname)} className='link'>Privacy Policy</li>
-                    <li>© 2024 ZOG Global</li>
+                    <li>© 2024 Soulcast</li>
                 </div>
             </div>
         </div>

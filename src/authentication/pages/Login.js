@@ -196,9 +196,9 @@ const Login = () => {
     <div className='auth-container'>
       <AuthBanner
         pageName={"login"}
-        titleWeb={"Welcome to<br/>ZOG Global!"}
+        titleWeb={"Welcome to<br/>Soulcast!"}
         titleTab={"Welcome to ZOG<br/>Global!"}
-        titleMob={"Welcome to<br/>ZOG Global!"}
+        titleMob={"Welcome to<br/>Soulcast!"}
         paraWeb={"Don’t have an account? Sign up<br/>now and get started. "}
         paraTab={"Don’t have an account? Sign up now<br/> and get started. "}
         paraMob={"Don’t have an account? Sign up now<br/> and get started. "}

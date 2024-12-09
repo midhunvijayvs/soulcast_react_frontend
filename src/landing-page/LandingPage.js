@@ -145,7 +145,7 @@ const LandingPage = () => {
         API.post("/contact_us/", updatedFormData).then((response) => {
           // Handle the API response as needed
           setIsLoading(false)
-          setMessage("Your Message is sent Succesfully! Our team will contact you shortly. Thank you for showing interest in ZOG Global.");
+          setMessage("Your Message is sent Succesfully! Our team will contact you shortly. Thank you for showing interest in Soulcast.");
           setIsMessageModalOpen(true)
         })
           .catch(error => {
@@ -293,7 +293,7 @@ const LandingPage = () => {
         author: "Michael L",
         date: "Jun 02"
       },
-      {description: "Working with ZOG Global team was a breath of fresh air. They not only understood our needs but also made the whole process seamless and stress-free.",
+      {description: "Working with Soulcast team was a breath of fresh air. They not only understood our needs but also made the whole process seamless and stress-free.",
         author: "Sarah Thompson",
         date: "Feb 03"
       },
@@ -584,8 +584,8 @@ const LandingPage = () => {
         <div className='sec-4'>
           <img src="/images/sub-pages-banner-icon.svg" className="main-icon" 
             style={window.innerWidth > 992 ? { top: -667, left: "40%", transform: `rotate(${53}deg)` } : window.innerWidth > 767 ? { top: -650, left: "25%", transform: `rotate(${112}deg)` } : { top: -550, left: "-6%", transform: `rotate(${127}deg)` }}></img>
-          <div className='title only-web'>Why Choose ZOG Global for your Security<br/> Needs?</div>
-          <div className='title only-tab'>Why Choose ZOG Global<br/> for your Security Needs?</div>
+          <div className='title only-web'>Why Choose Soulcast for your Security<br/> Needs?</div>
+          <div className='title only-tab'>Why Choose Soulcast<br/> for your Security Needs?</div>
           <div className='title only-mob'>Why Choose ZOG<br/> Global for your<br/> Security Needs?</div>
 
           <div className='black-card-section'>
@@ -639,15 +639,15 @@ const LandingPage = () => {
           <img src="/images/sub-pages-banner-icon.svg" className="main-icon" 
             style={window.innerWidth > 992 ? { top: "-26%", right: -520, transform: `rotate(${-18}deg)` } : window.innerWidth > 767 ? { top: "28%", right: -368, transform: `rotate(${90}deg)` } : { top: "20%", right: -232, transform: `rotate(${90}deg)` }}></img>
           
-          <div className='banner-title only-web'>Secure your IT<br/> Infrastructure with<br/><span>ZOG Global</span> </div>
-          <div className='banner-title only-tab'>Secure your IT<br/> Infrastructure with<br/><span>ZOG Global</span> </div>
-          <div className='banner-title only-mob'>Secure your IT<br/> Infrastructure with<br/><span>ZOG Global</span> </div>
+          <div className='banner-title only-web'>Secure your IT<br/> Infrastructure with<br/><span>Soulcast</span> </div>
+          <div className='banner-title only-tab'>Secure your IT<br/> Infrastructure with<br/><span>Soulcast</span> </div>
+          <div className='banner-title only-mob'>Secure your IT<br/> Infrastructure with<br/><span>Soulcast</span> </div>
           <button onClick={scrollTop} className="button-white-box">ENQUIRE NOW</button>
         </div>
         <div className='footer-sec'>
             <div className='footer-content'>
               <li onClick={() => navigate("/landing-page-privacy-policy")} className='link'>Privacy Policy</li>
-              <li>© 2024 ZOG Global</li>
+              <li>© 2024 Soulcast</li>
             </div>
         </div>
 

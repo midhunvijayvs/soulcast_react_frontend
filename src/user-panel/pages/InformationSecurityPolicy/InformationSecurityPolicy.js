@@ -46,13 +46,13 @@ const InformationSecurityPolicy = () => {
                 </div>
                 <div className='scope'>
                     <div className='title'>Purpose </div>
-                    <p>This policy outlines the measures and protocols implemented by ZOG Global to protect sensitive information and assets against unauthorised access, disclosure, alteration, or destruction. It aims to ensure confidentiality, integrity, and availability of data across all operations within the company. </p>
+                    <p>This policy outlines the measures and protocols implemented by Soulcast to protect sensitive information and assets against unauthorised access, disclosure, alteration, or destruction. It aims to ensure confidentiality, integrity, and availability of data across all operations within the company. </p>
                 </div>
                 
                 
                 <div className='scope'>
                     <div className='title'>Audience </div>
-                    <p>This policy is directed towards all employees, contractors, third-party vendors, and any individual accessing ZOG Global's network, systems, or data. </p>
+                    <p>This policy is directed towards all employees, contractors, third-party vendors, and any individual accessing Soulcast's network, systems, or data. </p>
                 </div>
                 
                 
@@ -73,7 +73,7 @@ const InformationSecurityPolicy = () => {
                     <div className='title'> 
 
 Data Classification </div>
-                    <p>ZOG Global classifies data into categories based on sensitivity: 
+                    <p>Soulcast classifies data into categories based on sensitivity: 
 <br/>
 <br/>
 <strong>Confidential:</strong> Information requiring the highest level of protection (e.g., customer data, financial records). 
@@ -134,7 +134,7 @@ Data Classification </div>
 Virus Protection Procedure </div>
                     <p></p>
                     <ul>
-                        <li><p>All devices connected to ZOG Global's network must have updated antivirus software installed. </p></li> 
+                        <li><p>All devices connected to Soulcast's network must have updated antivirus software installed. </p></li> 
                         <li><p>Regular scans and updates will be conducted to ensure protection against viruses and malware. </p></li> 
                     </ul>
                 </div>
@@ -203,7 +203,7 @@ Network Intrusion Detection Procedure </div>
                     </ul>
                     <br/>
                     <br/>
-                    <p>Our commitment to safeguarding information is unwavering. Through adherence to these policies, we ensure data integrity, confidentiality, and availability. Thank you for your dedication to upholding these principles and fostering a secure environment essential for trust and sustained excellence at ZOG Global. </p>
+                    <p>Our commitment to safeguarding information is unwavering. Through adherence to these policies, we ensure data integrity, confidentiality, and availability. Thank you for your dedication to upholding these principles and fostering a secure environment essential for trust and sustained excellence at Soulcast. </p>
 
                 </div>
                
@@ -219,7 +219,7 @@ Network Intrusion Detection Procedure </div>
             <div className='footer-sec'>
                 <div className='footer-content'>
                     <li onClick={() => navigate(window.location.pathname)} className='link'>Privacy Policy</li>
-                    <li>© 2024 ZOG Global</li>
+                    <li>© 2024 Soulcast</li>
                 </div>
             </div>
         </div>

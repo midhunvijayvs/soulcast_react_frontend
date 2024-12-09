@@ -42,7 +42,7 @@ const CookiePolicy = () => {
             <div className='sec-2'>
                 <div className='privacy-head'>
                     <div className='title'>Cookie Policy</div>
-                    <p className='title-para'>At ZOG Global, we value your privacy and strive to provide you with the best online experience possible. In order to achieve this, we use cookies and similar technologies on our website. This Cookie Policy outlines the types of cookies we collect and how they are used. </p>
+                    <p className='title-para'>At Soulcast, we value your privacy and strive to provide you with the best online experience possible. In order to achieve this, we use cookies and similar technologies on our website. This Cookie Policy outlines the types of cookies we collect and how they are used. </p>
                 </div>
                 <div className='scope'>
                     <div className='title'>What are Cookies? </div>
@@ -99,7 +99,7 @@ You can also delete cookies that have already been placed on your device. The pr
             <div className='footer-sec'>
                 <div className='footer-content'>
                     <li onClick={() => navigate(window.location.pathname)} className='link'>Cookie Policy</li>
-                    <li>© 2024 ZOG Global</li>
+                    <li>© 2024 Soulcast</li>
                 </div>
             </div>
         </div>

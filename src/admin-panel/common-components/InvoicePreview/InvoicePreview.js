@@ -17,7 +17,7 @@ const InvoicePreview = ( {visibleFields} ) => {
                 <img src='/images/admin-panel/app-logo.svg' alt=''></img>
             </div>
             <div className='title'>
-                <h1>Zog Global Ltd</h1>
+                <h1>Soulcast Ltd</h1>
                 <p>Suite V3, 4 Woodland Road,</p>
                 <p>Darlington, DL3 7PJ</p>
             </div>

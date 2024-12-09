@@ -63,8 +63,8 @@ const InvoiceSendPopup = ({ title, state, setterFunction, okClickedFunction,form
     const AddressList = [
         {
             id: 1,
-            title: 'ZOG Global Ltd Suite V3',
-            address: "ZOG Global Ltd Suite V3, 4 Woodland Road,  Darlington, DL3 7PJ"
+            title: 'Soulcast Ltd Suite V3',
+            address: "Soulcast Ltd Suite V3, 4 Woodland Road,  Darlington, DL3 7PJ"
         },
         {
             id: 2,

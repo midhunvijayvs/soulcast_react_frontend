@@ -191,7 +191,7 @@ const View = () => {
       API.post("/contact_us/", updatedFormData).then((response) => {
         // Handle the API response as needed
         setIsLoading(false)
-        setMessage("Your Message is sent Succesfully! Our team will contact you shortly. Thank you for showing interest in ZOG Global.");
+        setMessage("Your Message is sent Succesfully! Our team will contact you shortly. Thank you for showing interest in Soulcast.");
         setIsMessageModalOpen(true)
         window.localStorage.removeItem("emailForSignup")
 
@@ -450,8 +450,8 @@ const View = () => {
                   <div class="form-check agreement">
                     <input class="form-check-input" type="checkbox" value="" id="agree_checkbox_1" name="agree_checkbox_1" onChange={(e) => setAgree(1, e)} checked={agree1}></input>
                     <label class="form-check-label" for="flexCheckDefault">
-                      Yes, I agree with the storage and handling of my data by this website, to receive periodic emails from ZOG Global related to products and services and can unsubscribe
-                      at any time. I accept ZOG Global’s <span className="pp">Privacy Policy.</span>
+                      Yes, I agree with the storage and handling of my data by this website, to receive periodic emails from Soulcast related to products and services and can unsubscribe
+                      at any time. I accept Soulcast’s <span className="pp">Privacy Policy.</span>
                     </label>
 
                   </div>
@@ -466,7 +466,7 @@ const View = () => {
                   <div class="form-check agreement">
                     <input class="form-check-input" type="checkbox" value="" id="agree_checkbox_2" name="agree_checkbox_2" onChange={(e) => setAgree(2, e)} checked={agree2}></input>
                     <label class="form-check-label" for="flexCheckDefault" >
-                      By clicking submit below, you consent to allow ZOG Global to store and process the personal information submitted above to provide you the content requested.*
+                      By clicking submit below, you consent to allow Soulcast to store and process the personal information submitted above to provide you the content requested.*
                     </label>
 
                   </div>

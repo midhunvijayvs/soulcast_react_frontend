@@ -25,7 +25,7 @@ const Footer = () => {
           <div className=" col-lg-3 ">
             <ul>
               <li onClick={() => navigate("/why-zog-global")}>
-                Why Zog Global
+                Why Soulcast
               </li>
               <li onClick={() => navigate("/what-we-do")}>What We Do</li>
               <li onClick={() => navigate("/transform-your-business")}>Transform Your Business</li>
@@ -138,7 +138,7 @@ const Footer = () => {
           <div className=" col-lg-6">
             <ul>
               <li onClick={() => navigate("/why-zog-global")}>
-                Why Zog Global
+                Why Soulcast
               </li>
               <li onClick={() => navigate("/what-we-do")}>What We Do</li>
               <li onClick={() => navigate("/transform-your-business")}>Transform Your Business</li>
@@ -251,7 +251,7 @@ const Footer = () => {
             <a onClick={() => navigate("/cookie-policy/")}>Cookie Policy</a>
           </div>
 
-          <div className="cr-box"><p>© 2024 ZOG Global</p></div>
+          <div className="cr-box"><p>© 2024 Soulcast</p></div>
         </div>
       </div>
     </div>
