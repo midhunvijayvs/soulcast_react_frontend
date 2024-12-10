@@ -32,7 +32,7 @@ const InformationSecurityPolicy = () => {
     return (
         <div className=' privacy-policy'>
             <div className='header' id='header' >
-                <img className='app-logo' onClick={() => navigate('/')} style={{ cursor: "pointer" }} src="/images/app-logo-header.svg" alt=''></img>
+                <img className='app-logo' onClick={() => navigate('/')} style={{ cursor: "pointer" }} src="/images/header/app-logo-header.svg" alt=''></img>
             </div>
             <div className='banner-section' >
                 <img src="/images/sub-pages-banner-icon.svg" className="main-icon"

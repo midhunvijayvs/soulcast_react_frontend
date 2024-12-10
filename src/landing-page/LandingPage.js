@@ -323,7 +323,7 @@ const LandingPage = () => {
   return (
     <div className='landing-page'>
         <div className='header' id='header' >
-            <img className='app-logo' src="/images/app-logo-header.svg" alt=''></img>
+            <img className='app-logo' src="/images/header/app-logo-header.svg" alt=''></img>
         </div>
         <div className='banner-section' style={{backgroundImage:`url("/images/landing-page/banner-${window.innerWidth<767?"mob":window.innerWidth<992?"tab":"web"}.png")`}}>
             <div className='banner-title only-web'>Trusted <br/> Cybersecurity <br/> Services for <br/> Ultimate Protection</div>

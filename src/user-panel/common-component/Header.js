@@ -114,7 +114,7 @@ setCurrentPageIndex(localStorage.getItem("currentPageIndex"))
   return (
     <div className='header' id='header' >
 
-      <img className='app-logo' onClick={() => navigate('/')} role='button' src="/images/app-logo-header.svg" alt=''></img>
+      <img className='app-logo' onClick={() => navigate('/')} role='button' src="/images/header/app-logo-header.svg" alt='logo'></img>
 
       <div className='text-menu-box'>
         <span onClick={()=>{localStorage.setItem("currentPageIndex",1); setCurrentPageIndex(1); navigate("/why-zog-global")}} className={currentPageIndex===1&&"active"}>WHY SOULCAST</span>
