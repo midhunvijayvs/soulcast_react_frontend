@@ -54,7 +54,7 @@ const Header = ({ userData, isLoggedIn }) => {
                         <div className="img-box">
                             <img src={userData && userData.profile_image ? `https://friendsmalayali.uk${userData.profile_image}` : "/images/admin-panel/header/avatar-no-profile-image.png"} className="rounded"></img>
                         </div>
-                        <img src="/images/admin-panel/header/down-arrow.svg"></img>
+                        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/header/down-arrow.svg`}></img>
                         {profileMenuOpen && <ProfileMenu userData={userData} setNotificationSettingsShow={setNotificationSettingsShow} setSecurityModalShow={setSecurityModalShow} setLogoutModalShow={setLogoutModalShow}></ProfileMenu>}
                     </div>
                     :

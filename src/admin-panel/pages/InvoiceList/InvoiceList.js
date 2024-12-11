@@ -467,7 +467,7 @@ const InvoiceList = () => {
                                     </td>
                                     <td>
                                         <button className="sort-btn custom-select" id="action" onClick={() => toggleAction(index)}>
-                                            <img src="/images/admin-panel/dots.svg"  alt=""/>
+                                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/dots.svg`}  alt=""/>
                                             {isActionListOpen[index] && (
                                                 <div className='option-list sort-by'>
                                                     <div className='option'>Edit Invoice</div>

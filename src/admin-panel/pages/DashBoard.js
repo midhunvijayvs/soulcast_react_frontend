@@ -16,7 +16,7 @@ const View = () => {
                 <div className="row justify-content-between">
                     <div className="col-md-4 d-flex justify-content-center">
                         <div className="card">
-                            <img src="/images/admin-panel/dashboard/sec-1-1.svg"></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/dashboard/sec-1-1.svg"></img>
                             <div>
                                 <h6>{adminDashboardData.new_order} new orders</h6>
                                 <p>View all new orders</p>
@@ -26,7 +26,7 @@ const View = () => {
 
                     <div className="col-md-4 d-flex justify-content-center">
                         <div className="card">
-                            <img src="/images/admin-panel/dashboard/sec-1-2.svg"></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/dashboard/sec-1-2.svg"></img>
                             <div>
                                 <h6>{adminDashboardData.total_purchased} Total Purchased</h6>
                                 <p>View all products</p>
@@ -36,7 +36,7 @@ const View = () => {
 
                     <div className="col-md-4 d-flex justify-content-center">
                         <div className="card">
-                            <img src="/images/admin-panel/dashboard/sec-1-3.svg"></img>
+                            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/dashboard/sec-1-3.svg"></img>
                             <div>
                                 <h6>{adminDashboardData.total_sale} Total Sale</h6>
                                 <p>View all orders</p>
@@ -308,7 +308,7 @@ const View = () => {
                                 {adminDashboardData.upcoming_delivery_table.map((item, index) => {
                                     return (
                                         <tr key={index}>
-                                            <td><img src="/images/admin-panel/dashboard/sec-3-star-icon.svg"></img></td>
+                                            <td><img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/dashboard/sec-3-star-icon.svg"></img></td>
                                             <td><span className="name-span">{item.name}</span><br></br>
                                                 {item.number_of_orders} products ordered
                                             </td>

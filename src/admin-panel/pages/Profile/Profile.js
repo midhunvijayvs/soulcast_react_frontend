@@ -245,7 +245,7 @@ const Profile = () => {
               {previewImage ?
                 <img src={previewImage} alt="" style={isImgLoading ? { opacity: '40%' } : { opacity: '100%' }} className="preview-image" />
                 :
-                <img src="/images/profile/avatar-no-profile-image.png"></img>
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/profile/avatar-no-profile-image.png`}></img>
               }
               {previewImage &&
                 <button className="btn btn-small-danger d-flex justify-content-center  w-100 delete-btn" onClick={handleImageDelete}> <svg className="me-2" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

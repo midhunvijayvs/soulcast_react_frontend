@@ -157,7 +157,7 @@ const MultipleImageUploader = ({ state, setterFunction, setLoading, formFrrors, 
                     <div className='col-md-4'>
                         <div className="file-input-wrapper">
                             <div className="file-input-preview">
-                                <img src="/images/admin-panel/products/add-product/image-upload-icon.svg"></img>
+                                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/products/add-product/image-upload-icon.svg"></img>
                             </div>
                             <input type="file" multiple onChange={handleFileSelect} />
                             <span>Upload your Image</span>

@@ -103,24 +103,24 @@ export class Analytics extends Component {
                 <div className='fw-600 f-md mb-3'>Traffic by Site</div>
                 <div className='w-100 d-flex mb-2'>
                     <div className='w-50 me-2 ss-border'>
-                        <img src="/images/Analytics/fb.svg" alt=''></img>
+                        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/Analytics/fb.svg" alt=''></img>
                         <div className='fw-600 brick-clr mt-3'>323.23k</div>
                         <div className='fw-600'>Facebook</div>
                     </div>
                     <div className='w-50 ss-border'>
-                        <img src="/images/Analytics/google.svg" alt=''></img>
+                        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/Analytics/google.svg" alt=''></img>
                         <div className='fw-600 brick-clr mt-3'>323.23k</div>
                         <div className='fw-600'>Google</div>
                     </div>
                 </div>
                 <div className='w-100 d-flex'>
                     <div className='w-50 me-2 ss-border'>
-                        <img src="/images/Analytics/twitter.svg" alt=''></img>
+                        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/Analytics/twitter.svg" alt=''></img>
                         <div className='fw-600 brick-clr mt-3'>323.23k</div>
                         <div className='fw-600'>Twitter</div>
                     </div>
                     <div className='w-50 ss-border'>
-                        <img src="/images/Analytics/insta.svg" alt=''></img>
+                        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/Analytics/insta.svg" alt=''></img>
                         <div className='fw-600 brick-clr mt-3'>323.23k</div>
                         <div className='fw-600'>Instagram</div>
                     </div>

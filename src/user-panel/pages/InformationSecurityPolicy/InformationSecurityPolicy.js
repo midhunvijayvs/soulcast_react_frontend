@@ -35,7 +35,7 @@ const InformationSecurityPolicy = () => {
                 <img className='app-logo' onClick={() => navigate('/')} style={{ cursor: "pointer" }} src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/header/app-logo-header.svg`} alt=''></img>
             </div>
             <div className='banner-section' >
-                <img src="/images/sub-pages-banner-icon.svg" className="main-icon"
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/sub-pages-banner-icon.svg`} className="main-icon"
                     style={window.innerWidth > 992 ? { bottom: -577, right: 100, transform: `rotate(${123}deg)` } : window.innerWidth > 767 ? { bottom: -590, right: 45, transform: `rotate(${131}deg)` } : { bottom: -470, right: -116, transform: `rotate(${117}deg)` }}></img>
                 <div className='banner-title'>Information Security Policy </div>
             </div>

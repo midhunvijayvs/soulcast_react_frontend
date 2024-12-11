@@ -17,13 +17,13 @@ export default function LeftNavbar() {
             {
                 "id": 1,
                 "label": "Dashboard",
-                "icon_image_url": "/images/admin-panel/left-nav-bar/dashboard.svg",
+                "icon_image_url": `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/left-nav-bar/dashboard.svg`,
                 "position": 1
             },
             {
                 "id": 2,
                 "label": "Jobs",
-                "icon_image_url": "/images/admin-panel/left-nav-bar/jobs.svg",
+                "icon_image_url": `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/left-nav-bar/jobs.svg`,
                 "items": [
                     {
                         "id": 1,
@@ -70,7 +70,7 @@ export default function LeftNavbar() {
             {
                 "id": 3,
                 "label": "Invoice",
-                "icon_image_url": "/images/admin-panel/left-nav-bar/invoice.svg",
+                "icon_image_url": `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/left-nav-bar/invoice.svg`,
                 "items": [
                     {
                         "id": 7,
@@ -94,7 +94,7 @@ export default function LeftNavbar() {
             {
                 "id": 4,
                 "label": "Management",
-                "icon_image_url": "/images/admin-panel/left-nav-bar/management.svg",
+                "icon_image_url": `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/left-nav-bar/management.svg`,
                 "items": [
                     {
                         "id": 3,
@@ -152,7 +152,7 @@ export default function LeftNavbar() {
             {
                 "id": 5,
                 "label": "HR",
-                "icon_image_url": "/images/admin-panel/left-nav-bar/hr.svg",
+                "icon_image_url": `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/left-nav-bar/hr.svg`,
                 "items": [
 
 
@@ -164,7 +164,7 @@ export default function LeftNavbar() {
             {
                 "id": 2,
                 "label": "Blog",
-                "icon_image_url": "/images/admin-panel/left-nav-bar/blog.svg",
+                "icon_image_url": `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/left-nav-bar/blog.svg`,
                 "items": [
                     {
                         "id": 3,
@@ -189,7 +189,7 @@ export default function LeftNavbar() {
             {
                 "id": 6,
                 "label": "Monitor",
-                "icon_image_url": "/images/admin-panel/left-nav-bar/monitor.svg",
+                "icon_image_url": `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/left-nav-bar/monitor.svg`,
 
                 "position": 6
             }
@@ -202,7 +202,7 @@ export default function LeftNavbar() {
             <div className={catNavOpened ? 'category-box' : 'category-box shrinked'}>
 
                 <div className='item hamburger-btn' onClick={() => { openCatNav(!catNavOpened) }}>
-                    <img src="/images/admin-panel/left-nav-bar/hamburger.svg"></img>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/left-nav-bar/hamburger.svg`}></img>
                     <div className='label'></div>
                 </div>
 
@@ -224,7 +224,7 @@ export default function LeftNavbar() {
 
             <div className={catNavSelected==null ? 'main-box shrinked' : 'main-box'}>
                 <button className='close-btn' onClick={() => { selectCatNav(null) }}>
-                    <img src="/images/admin-panel/left-nav-bar/left-arrow-white.svg" />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/admin-panel/left-nav-bar/left-arrow-white.svg`} />
 
                 </button>
                 <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/header/app-logo-header.svg`} width="100" height="50" alt="" className='logo' />

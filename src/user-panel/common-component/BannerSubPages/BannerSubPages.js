@@ -77,7 +77,7 @@ const BannerSubPages = ({ pageName, blueTitle, titleWeb, titleTab, titleMob, sub
         <div className='sub-title only-mob' dangerouslySetInnerHTML={renderHTML(subTitleMob)}></div>
 
       </div>
-      <img src="/images/sub-pages-banner-icon.svg" className="main-icon" style={window.innerWidth > 992 ? { top: imagePosition.iconTopWeb, left: imagePosition.iconLeftWeb, transform: `rotate(${iconRotationWeb}deg)` } : window.innerWidth > 768 ? { top: imagePosition.iconTopTab, left: imagePosition.iconLeftTab, transform: `rotate(${iconRotationTab}deg)` } : { top: imagePosition.iconTopMob, left: imagePosition.iconLeftMob, transform: `rotate(${iconRotationMob}deg)` }}></img>
+      <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/sub-pages-banner-icon.svg`} className="main-icon" style={window.innerWidth > 992 ? { top: imagePosition.iconTopWeb, left: imagePosition.iconLeftWeb, transform: `rotate(${iconRotationWeb}deg)` } : window.innerWidth > 768 ? { top: imagePosition.iconTopTab, left: imagePosition.iconLeftTab, transform: `rotate(${iconRotationTab}deg)` } : { top: imagePosition.iconTopMob, left: imagePosition.iconLeftMob, transform: `rotate(${iconRotationMob}deg)` }}></img>
     </div>
   )
 }

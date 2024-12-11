@@ -87,7 +87,7 @@ function InvoiceDetails() {
               <div className='clr-898989 f-12 mb-3'>FROM</div>
               <div className='w-100 d-flex align-items-center'>
                 <div>
-                  <img src="/images/Invoice/From.svg" className='view-invoice-proimg' alt=''></img>
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/Invoice/From.svg" className='view-invoice-proimg' alt=''></img>
                 </div>
                 <div className='ms-3 black-clr'>
                   <div className='f-xs fw-600 mb-2'>SIBU FISH N’ MEAT</div>
@@ -101,7 +101,7 @@ function InvoiceDetails() {
               <div className='clr-898989 f-12 mb-3'>CUSTOMER</div>
               <div className='w-100 d-flex align-items-center'>
                 <div>
-                  <img src="/images/Invoice/Customer.svg" className='view-invoice-proimg' alt=''></img>
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/Invoice/Customer.svg" className='view-invoice-proimg' alt=''></img>
                 </div>
                 <div className='ms-3 black-clr'>
                   <div className='f-xs fw-600 mb-2'>{data.billing_first_name}&nbsp;{data.billing_last_name}</div>

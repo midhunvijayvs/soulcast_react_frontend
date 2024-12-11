@@ -458,7 +458,7 @@ const LandingPage = () => {
         </div>
 
         <div className='sec-2'>
-          <img src="/images/sub-pages-banner-icon.svg" className="main-icon" 
+          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/sub-pages-banner-icon.svg`} className="main-icon" 
             style={window.innerWidth > 992 ? { top: -420, left: -368, transform: `rotate(${67}deg)` } : window.innerWidth > 767 ? { top: -660, left: -328, transform: `rotate(${86}deg)` } : { top: -530, left: -232, transform: `rotate(${77}deg)` }}></img>
           <div className='title only-web'>Cybersecurity<br/> Services We Offer</div>
           <div className='title only-tab'>Cybersecurity Services<br/> We Offer</div>
@@ -582,7 +582,7 @@ const LandingPage = () => {
         </div>
 
         <div className='sec-4'>
-          <img src="/images/sub-pages-banner-icon.svg" className="main-icon" 
+          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/sub-pages-banner-icon.svg`} className="main-icon" 
             style={window.innerWidth > 992 ? { top: -667, left: "40%", transform: `rotate(${53}deg)` } : window.innerWidth > 767 ? { top: -650, left: "25%", transform: `rotate(${112}deg)` } : { top: -550, left: "-6%", transform: `rotate(${127}deg)` }}></img>
           <div className='title only-web'>Why Choose Soulcast for your Security<br/> Needs?</div>
           <div className='title only-tab'>Why Choose Soulcast<br/> for your Security Needs?</div>
@@ -614,7 +614,7 @@ const LandingPage = () => {
         </div>
 
         <div className='sec-5'>
-          <img src="/images/sub-pages-banner-icon.svg" className="main-icon" 
+          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/sub-pages-banner-icon.svg`} className="main-icon" 
               style={window.innerWidth > 992 ? { top: -574, right: -422, transform: `rotate(${223}deg)` } : window.innerWidth > 767 ? { top: -511, right: -503, transform: `rotate(${74}deg)` } : { top: -510, right: -221, transform: `rotate(${188}deg)` }}></img>
           <div className='title only-web'>What Do Our Clients Say ?</div>
           <div className='title only-tab'>What Do Our Clients Say ?</div>
@@ -636,7 +636,7 @@ const LandingPage = () => {
         </div>
 
         <div className='bottom-banner' style={{backgroundImage:`url("/images/landing-page/bottom-banner-${window.innerWidth<767?"mob":window.innerWidth<992?"tab":"web"}.png")`}}>
-          <img src="/images/sub-pages-banner-icon.svg" className="main-icon" 
+          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/sub-pages-banner-icon.svg`} className="main-icon" 
             style={window.innerWidth > 992 ? { top: "-26%", right: -520, transform: `rotate(${-18}deg)` } : window.innerWidth > 767 ? { top: "28%", right: -368, transform: `rotate(${90}deg)` } : { top: "20%", right: -232, transform: `rotate(${90}deg)` }}></img>
           
           <div className='banner-title only-web'>Secure your IT<br/> Infrastructure with<br/><span>Soulcast</span> </div>

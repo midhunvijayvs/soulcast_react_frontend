@@ -260,7 +260,7 @@ const View = () => {
 
       </div>
       <div className='sec-2'>
-        <img src="/images/contact-us/sec-2.svg"></img>
+        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/contact-us/sec-2.svg`}></img>
         <div className='inner'>
           <div className='segment'>
             <div className='sub-title'>Location</div>

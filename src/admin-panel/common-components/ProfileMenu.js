@@ -25,7 +25,7 @@ const View = ({ userData, setNotificationSettingsShow,setSecurityModalShow, setL
         :
         <div className="header">
         <div className="img-circle">
-            <img src="/images/profile/avatar-no-profile-image.png"></img>
+            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/profile/avatar-no-profile-image.png`}></img>
         </div>
         <div className="text-box">
             <h4>Hello There</h4>
