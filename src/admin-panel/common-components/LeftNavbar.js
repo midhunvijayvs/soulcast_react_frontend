@@ -227,7 +227,7 @@ export default function LeftNavbar() {
                     <img src="/images/admin-panel/left-nav-bar/left-arrow-white.svg" />
 
                 </button>
-                <img src="/images/header/app-logo-header.svg" width="100" height="50" alt="" className='logo' />
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/header/app-logo-header.svg`} width="100" height="50" alt="" className='logo' />
 
               
                 {catNavSelected !== null && (

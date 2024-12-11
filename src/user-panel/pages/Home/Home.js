@@ -719,8 +719,8 @@ const Userhome = ({ userData, loadUserData }) => {
             className="main-heading only-web montserrat-hard"
             // style={{ color: `rgba(255, 255, 255, ${1 - opacity * 3})` }}>
             style={{ color: `rgba(255, 255, 255, 1)` }}>
-            Your Next Digital Partner
-            <br /> For Innovative IT Services
+           Oval
+            <br />Group of Hi-Tech Farms
 
           </div>
           <div
@@ -749,7 +749,7 @@ const Userhome = ({ userData, loadUserData }) => {
         <div
           className="bannerimg-home "
           style={{
-            backgroundImage: 'url("/images/home/Main_banner.png")',
+            backgroundImage: `url("${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/banner-web.png")`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}></div>

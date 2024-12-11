@@ -11,7 +11,7 @@ const AuthBanner = (props) => {
     <div className='auth-banner'>
         <div className='header'>
             <Header></Header>
-            {/* <img className='app-logo' onClick={() => navigate('/')}  role='button' src="/images/header/app-logo-header.svg" alt=''></img> */}
+            {/* <img className='app-logo' onClick={() => navigate('/')}  role='button' src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/header/app-logo-header.svg`} alt=''></img> */}
         </div>
         <div className='banner-content'>
             <h1 className='only-web' dangerouslySetInnerHTML={renderHTML(props.titleWeb)}></h1>
