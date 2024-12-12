@@ -803,30 +803,30 @@ const Userhome = ({ userData, loadUserData }) => {
 
       <div className="section2-homepage">
         <div className="imglogo-line-home">
-          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Intersect (1).svg`}
+          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-text-image.png`}
             className="textlogo-homepage"
           />
 
           <div className="blueline"></div>
         </div>
 
-        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\bg-triangle.png`}
+        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/bg-triangle.png`}
           className="trianglelogo-homepage"
         />
 
         <div className="slider-container montserrat-lit">
 
 
-          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Frame (2).svg`} className='arrow2-home' onClick={previous} />
-          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Frame (1).svg`} className='arrow1-home' onClick={next} />
+          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Frame (2).svg`} className='arrow2-home' onClick={previous} />
+          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Frame (1).svg`} className='arrow1-home' onClick={next} />
           <Slider ref={sliderRef} {...settings}>
             <div>
               <div className='hm1' onClick={()=>navigate('/software-development')}>
                 <div
                   className="sliderimg"
                 >
-                  <img src='/images/home/Frame 322.png' className='imo' />
-                  <div className='title'>Software Development</div>
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-1.jpg`} className='imo' />
+                  <div className='title'>White Oyster Mushrooms</div>
                   <p>Craft innovative, high-quality software solutions for diverse business needs.</p>
 
                 </div>
@@ -838,8 +838,8 @@ const Userhome = ({ userData, loadUserData }) => {
                 <div
                   className="sliderimg"
                 >
-                  <img src='/images/home/Frame 327.png' className='imo' />
-                  <div className='title'>Cloud Solutions</div>
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-2.jpg`} className='imo' />
+                  <div className='title'>Grey Oyster Mushrroms</div>
                   <p>Harness the power of cloud computing for scalable and flexible solutions.</p>
 
                 </div>
@@ -852,8 +852,8 @@ const Userhome = ({ userData, loadUserData }) => {
                 <div
                   className="sliderimg"
                 >
-                  <img src='/images/home/Frame 328.png' className='imo' />
-                  <div className='title'>Automation</div>
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-3.jpg`} className='imo' />
+                  <div className='title'>Mushroom Spawn</div>
                   <p>Boost efficiency and reduce manual efforts with streamlined, automated processes.</p>
 
                 </div>
@@ -865,8 +865,8 @@ const Userhome = ({ userData, loadUserData }) => {
                 <div
                   className="sliderimg"
                 >
-                  <img src='/images/home/Frame 325.png' className='imo' />
-                  <div className='title'>DevOps</div>
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-4.jpg`} className='imo' />
+                  <div className='title'>Mushroom Beds</div>
                   <p>Merge development and operations for faster, more reliable software delivery.</p>
                 </div>
               </div>
@@ -879,8 +879,8 @@ const Userhome = ({ userData, loadUserData }) => {
                 <div
                   className="sliderimg"
                 >
-                  <img src='/images/home/Frame 329.png' className='imo' />
-                  <div className='title'>DevSecOps</div>
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-5.jpg`} className='imo' />
+                  <div className='title'>Technical Support</div>
                     <p>Integrate security seamlessly into the development process for robust apps.</p>
 
                 </div>
@@ -892,43 +892,16 @@ const Userhome = ({ userData, loadUserData }) => {
                 <div
                   className="sliderimg"
                 >
-                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\cybersec\Rectangle 187 (6).png`} className='imo' />
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-6.jpg`} className='imo' />
 
-                  <div className='title'>Advanced Networking Services</div>
-                    <p>Transform connectivity with SD-WAN and SDN for agile, scalable networks.</p>
+                  <div className='title'>Home Delivery</div>
+                    <p>We deliver at your Doorstep on orders above 900gms</p>
 
                 </div>
               </div>
             </div>
 
-            <div>
-                <div className='hm1' onClick={()=>navigate('/cybersecurity')}>
-                  <div
-                    className="sliderimg"
-                  >
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\cybersec\Rectangle 187 (6).png`} className='imo' />
-
-                    <div className='title'>Testing</div>
-                    <p>Ensure software reliability through expert testing for optimal performance.</p>
-
-                  </div>
-                </div>
-              </div>
-
-
-              <div>
-                <div className='hm1'>
-                  <div
-                    className="sliderimg"
-                  >
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\cybersec\Rectangle 187 (6).png`} className='imo' />
-
-                    <div className='title'>Unified Communications</div>
-                    <p>Seamlessly integrate communication tools for efficient and collaborative workflows.</p>
-
-                  </div>
-                </div>
-              </div>
+           
           </Slider>
         </div>
       </div>
@@ -937,30 +910,29 @@ const Userhome = ({ userData, loadUserData }) => {
       <div className="subsection3-home">
         <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Isolation_Mode.svg`} className="build4u" alt="Build 4U" />
         <span className="bl4text montserrat-hard">
-          Build
+          FOOD
           <span className={`rotating-text ${scrollDirection === 'up' ? 'rotate' : ''}`}>
             4
           </span>
 
 
           <br />
-          Happiness
+          HEALTH
         </span>
         <p className="montserrat-lit">
-          <span className="montserrat-hard">Transform with confidence -</span>
+          <span className="montserrat-hard">Health without compromising Taste -</span>
           <br />
-          innovative IT, seamless digital experiences, robust security. Your
-          trusted partner for every step.
+          You no longer need to compromise taste to keep you healthy. Just Switch to mushrooms
         </p>
       </div>
 
       <div className="sec4-homepage">
         <div className="bluecontainer-homepage montserrat-hard">
-          <p>Cybersecurity Solutions</p>
+          <p>Mushroom Dishes</p>
           <div className="hr1-homepage"></div>
           <div className='arr-absl'>
-            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Frame (2).svg`} className='arr-homepage' onClick={previous2} />
-            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Frame (1).svg`} className='arr-homepage' onClick={next2} />
+            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Frame (2).svg`} className='arr-homepage' onClick={previous2} />
+            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Frame (1).svg`} className='arr-homepage' onClick={next2} />
           </div>
         </div>
 
@@ -1113,7 +1085,7 @@ const Userhome = ({ userData, loadUserData }) => {
               alt={sections[activeSection].title}
             />
           ) :
-            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\content-dropdown\Rectangle 185.png`} className='sec6-img' />}
+            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown\Rectangle 185.png`} className='sec6-img' />}
         </div>
 
       </div>
@@ -1304,74 +1276,13 @@ const Userhome = ({ userData, loadUserData }) => {
               <Slider {...settings3}>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Dark.png`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Dark.png`} className='img-sec7-small' />
 
                   </div>
                 </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Tech Stack Logos\reactjs\Dark.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Dark.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 46.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 33.svg`} className='img-sec7-small' />
-
-                  </div>
-
-                </div>
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 65.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 66.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 73.svg`} className='img-sec7-small' />
-
-                  </div>
-
-                </div>
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 74.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Dark.png`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Tech Stack Logos\reactjs\Dark.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Tech Stack Logos\reactjs\Dark.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
@@ -1379,13 +1290,74 @@ const Userhome = ({ userData, loadUserData }) => {
 
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Dark.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Dark.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 46.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 46.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 33.svg`} className='img-sec7-small' />
+
+                  </div>
+
+                </div>
+
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 65.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 66.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 73.svg`} className='img-sec7-small' />
+
+                  </div>
+
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 74.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Dark.png`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Tech Stack Logos\reactjs\Dark.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+
+
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Dark.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 46.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
@@ -1406,13 +1378,13 @@ const Userhome = ({ userData, loadUserData }) => {
               <Slider {...settings4}>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\logo21.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/logo21.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 98.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 98.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
@@ -1420,95 +1392,95 @@ const Userhome = ({ userData, loadUserData }) => {
 
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 25.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 25.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 39.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 49.svg`} className='img-sec7-small' />
-
-                  </div>
-
-                </div>
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 51.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 39.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
 
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 58.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 21.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 49.svg`} className='img-sec7-small' />
 
                   </div>
 
                 </div>
+
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 24.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 51.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
 
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 25.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 58.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 39.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 49.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 21.svg`} className='img-sec7-small' />
 
                   </div>
 
                 </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 51.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 24.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
 
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 58.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 25.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 21.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 39.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 49.svg`} className='img-sec7-small' />
 
                   </div>
 
                 </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 24.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 51.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 58.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 21.svg`} className='img-sec7-small' />
+
+                  </div>
+
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 24.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
@@ -1526,69 +1498,13 @@ const Userhome = ({ userData, loadUserData }) => {
               <Slider {...settings3}>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 100.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 100.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 99.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Vector.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 91.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 92.svg`} className='img-sec7-small' />
-
-                  </div>
-
-                </div>
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 95.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 94.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 97.svg`} className='img-sec7-small' />
-
-                  </div>
-
-                </div>
-
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 96.svg`} className='img-sec7-small' />
-
-                  </div>
-                </div>
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 93.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 99.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
@@ -1596,25 +1512,20 @@ const Userhome = ({ userData, loadUserData }) => {
 
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 79.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Vector.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 85.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 91.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
-                <div>
-                  <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 94.svg`} className='img-sec7-small' />
 
-                  </div>
-                </div>
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 92.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 92.svg`} className='img-sec7-small' />
 
                   </div>
 
@@ -1622,7 +1533,68 @@ const Userhome = ({ userData, loadUserData }) => {
 
                 <div>
                   <div className='smallbox-sec7'>
-                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\Group 95.svg`} className='img-sec7-small' />
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 95.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 94.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 97.svg`} className='img-sec7-small' />
+
+                  </div>
+
+                </div>
+
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 96.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 93.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+
+
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 79.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 85.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 94.svg`} className='img-sec7-small' />
+
+                  </div>
+                </div>
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 92.svg`} className='img-sec7-small' />
+
+                  </div>
+
+                </div>
+
+                <div>
+                  <div className='smallbox-sec7'>
+                    <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Group 95.svg`} className='img-sec7-small' />
 
                   </div>
                 </div>
@@ -1660,7 +1632,7 @@ const Userhome = ({ userData, loadUserData }) => {
                   {blog.title}</p>
                 <span>{blog.extra}</span>
                 <span>{blog.created_at}</span>
-                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\arrow-bl-anim.svg`} className='arrow-sec8' />
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/arrow-bl-anim.svg`} className='arrow-sec8' />
 </div>
               </div>
             ))}
@@ -1679,7 +1651,7 @@ const Userhome = ({ userData, loadUserData }) => {
                 <p className='montserrat-hard'>{blog.title}</p>
                 <span>{blog.extra}</span>
                 <span>{blog.created_at}</span>
-                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\arrow-bl-anim.svg`} className='arrow-sec8' />
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/arrow-bl-anim.svg`} className='arrow-sec8' />
 
                 </div> 
                 </div>
@@ -1694,7 +1666,7 @@ const Userhome = ({ userData, loadUserData }) => {
                 <p className='montserrat-hard'>{blog.title}</p>
                 <span>{blog.extra}</span>
                 <span>{blog.created_at}</span>
-                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home\arrow-bl-anim.svg`} className='arrow-sec8' />
+                <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/arrow-bl-anim.svg`} className='arrow-sec8' />
                 </div>
               </div>
             ))}

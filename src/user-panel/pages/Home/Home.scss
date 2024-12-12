@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-$theme: rgba(0, 40, 253, 1);
+$theme: rgba(0, 170, 40, 1 );
 $bgtheme: #000020;
 
 .montserrat-hard {
@@ -564,7 +564,7 @@ background-color: #FFF2;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(80%);
   }
 
   .title {
@@ -585,7 +585,7 @@ background-color: #FFF2;
     cursor: pointer;
 
     .imo {
-      filter: brightness(0.5) sepia(1) hue-rotate(200deg) saturate(5);
+      filter: brightness(0.5) sepia(2) hue-rotate(100deg) saturate(5);
       /* Apply the blue overlay filter */
     }
 
@@ -631,7 +631,7 @@ background-color: #FFF2;
 
 .subsection3-home {
   height: 578px;
-  background-color: rgba(0, 0, 34, 1);
+  background-color: rgba(0, 34, 0, 1);
   width: 100%;
   padding: 20px 80px;
   display: flex;
@@ -907,7 +907,7 @@ background-color: #FFF2;
 .sec5-homepage {
   height: 500px;
   width: 100%;
-  background-color: rgba(0, 0, 34, 1);
+  background-color: rgba(0, 34, 0, 1);
   color: white;
   padding: 10px 80px;
   display: flex;
@@ -978,7 +978,7 @@ background-color: #FFF2;
 .sec6-homepage {
   width: 100%;
   height: fit-content;
-  background-color: rgba(0, 0, 34, 1);
+  background-color: rgba(0, 34, 0, 1);
   color: white;
   display: flex;
 
@@ -1074,7 +1074,7 @@ background-color: #FFF2;
 
 .sec7-homepage {
   height: 1000px;
-  background-color: rgba(0, 0, 34, 1);
+  background-color: rgba(0, 34, 0, 1);
   width: 100%;
   position: relative;
 
@@ -1292,7 +1292,7 @@ background-color: #FFF2;
     height: 670px;
     width: 100%;
     display: flex;
-    background-color: rgba(0, 0, 34, 1);
+    background-color: rgba(0, 34, 0, 1);
 
     .title-sec7-in {
       height: 100%;
@@ -1668,14 +1668,14 @@ background-color: #FFF2;
     }
 
     .blueline {
-      background-color: rgb(0, 40, 253);
+      background-color: rgb(0, 170, 40 );
       width: 37%;
       height: 7px;
       padding: 0px 0px;
     }
 
     .bluecontainer-homepage {
-      background-color: rgb(0, 40, 253);
+      background-color: rgb(0, 170, 40 );
       color: white;
 
       flex-direction: column;
@@ -1775,7 +1775,7 @@ background-color: #FFF2;
       width: 100%;
       height: -moz-fit-content;
       height: fit-content;
-      background-color: rgb(0, 0, 34);
+      background-color: rgba(0, 34, 0 );
       color: white;
       display: flex;
       flex-direction: column-reverse;
@@ -1798,7 +1798,7 @@ background-color: #FFF2;
     .sec5-homepage {
       height: 301px;
       width: 100%;
-      background-color: rgb(0, 0, 34);
+      background-color: rgba(0, 34, 0 );
       color: white;
       padding: 10px 80px;
       display: flex;
@@ -1808,7 +1808,7 @@ background-color: #FFF2;
 
     .sec7-homepage {
       height: fit-content;
-      background-color: rgb(0, 0, 34);
+      background-color: rgba(0, 34, 0 );
       width: 100%;
       position: relative;
 
@@ -1905,7 +1905,7 @@ background-color: #FFF2;
 
     .subsection3-home {
       height: fit-content;
-      background-color: rgb(0, 0, 34);
+      background-color: rgba(0, 34, 0 );
       width: 100%;
       padding: 80px 80px;
       display: flex;
@@ -2234,7 +2234,7 @@ background-color: #FFF2;
     .sec7-homepage {
 
       height: fit-content;
-      background-color: rgb(0, 0, 34);
+      background-color: rgba(0, 34, 0 );
       width: 100%;
 
       .form-homepage {
@@ -2308,7 +2308,7 @@ background-color: #FFF2;
         height: fit-content;
         width: 100%;
         display: flex;
-        background-color: rgb(0, 0, 34);
+        background-color: rgba(0, 34, 0 );
         flex-direction: column;
 
         .title-sec7-in {
@@ -2341,7 +2341,7 @@ background-color: #FFF2;
 
     .sec7-homepage .button {
       margin-left: 40px;
-      background-color: rgb(0, 40, 253);
+      background-color: rgb(0, 170, 40 );
       color: white;
       text-align: center;
       padding: 14px 39px;
@@ -2412,7 +2412,7 @@ background-color: #FFF2;
     .sec5-homepage {
       height: fit-content;
       width: 100%;
-      background-color: rgb(0, 0, 34);
+      background-color: rgba(0, 34, 0 );
       color: white;
       padding: 55px 40px;
       display: flex;
@@ -2425,10 +2425,10 @@ background-color: #FFF2;
       }
 
       .hr2 {
-        color: rgb(0, 40, 253);
+        color: rgb(0, 170, 40 );
         height: 8px;
         width: 100%;
-        background-color: rgb(0, 40, 253);
+        background-color: rgb(0, 170, 40 );
         transition: all 2s;
       }
 
@@ -2471,7 +2471,7 @@ background-color: #FFF2;
     .subsection3-home {
       height: -moz-fit-content;
       height: fit-content;
-      background-color: rgb(0, 0, 34);
+      background-color: rgba(0, 34, 0 );
       width: 100%;
       padding: 40px 40px 80px;
       display: flex;
@@ -2519,7 +2519,7 @@ background-color: #FFF2;
     .banner {
       .button-white-box-new {
         margin-left: 30px;
-        background-color: rgb(0, 40, 253);
+        background-color: rgb(0, 170, 40 );
         color: white;
         text-align: center;
         padding: 16px 37px;

@@ -117,8 +117,8 @@ setCurrentPageIndex(localStorage.getItem("currentPageIndex"))
       <img className='app-logo' onClick={() => navigate('/')} role='button' src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/header/app-logo-header.svg`} alt='logo'></img>
 
       <div className='text-menu-box'>
-        <span onClick={()=>{localStorage.setItem("currentPageIndex",1); setCurrentPageIndex(1); navigate("/why-zog-global")}} className={currentPageIndex===1&&"active"}>WHY SOULCAST</span>
-        <span onClick={()=>{localStorage.setItem("currentPageIndex",6);setCurrentPageIndex(6); navigate("/insights")}} className={currentPageIndex===6&&"active"}>INSIGHTS</span>
+        <span onClick={()=>{localStorage.setItem("currentPageIndex",1); setCurrentPageIndex(1); navigate("/why-zog-global")}} className={currentPageIndex===1&&"active"}>WHY MUSHROOMS</span>
+        <span onClick={()=>{localStorage.setItem("currentPageIndex",6);setCurrentPageIndex(6); navigate("/insights")}} className={currentPageIndex===6&&"active"}>ORDER NOW</span>
         <span onClick={()=>{localStorage.setItem("currentPageIndex",7);setCurrentPageIndex(7); navigate("/contact-us")}} className={currentPageIndex===7&&"active"}>CONTACT</span>
       </div>
       <button className='login-btn' onClick={() => { localStorage.setItem("userRoleRequest", "user"); localStorage.setItem('LoginRedirectURL', `/`); navigate('/login') }}><img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/header/login-icon.svg`}></img></button>

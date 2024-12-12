@@ -549,10 +549,10 @@ const LandingPage = () => {
               </div>
               <div className='greycard'>
                 <svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M36.125 7.5H9.875C7.80393 7.5 6.125 9.17893 6.125 11.25V37.5C6.125 39.5711 7.80393 41.25 9.875 41.25H36.125C38.1961 41.25 39.875 39.5711 39.875 37.5V11.25C39.875 9.17893 38.1961 7.5 36.125 7.5Z" stroke="#26B2E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M30.5 3.75V11.25" stroke="#26B2E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M15.5 3.75V11.25" stroke="#26B2E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M6.125 18.75H39.875" stroke="#26B2E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M36.125 7.5H9.875C7.80393 7.5 6.125 9.17893 6.125 11.25V37.5C6.125 39.5711 7.80393 41.25 9.875 41.25H36.125C38.1961 41.25 39.875 39.5711 39.875 37.5V11.25C39.875 9.17893 38.1961 7.5 36.125 7.5Z" stroke="#26e333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M30.5 3.75V11.25" stroke="#26e333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.5 3.75V11.25" stroke="#26e333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.125 18.75H39.875" stroke="#26e333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <div className='title'>
                   <span className='num'>8+</span>
