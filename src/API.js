@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const instance = axios.create({
-  baseURL: 'https://zogglobaltest.com/', // Set your fixed base URL here  'https://sibufishnmeat.co.uk'    'https://friendsmalayali.uk'
+  baseURL: 'https://soulcast-django-backend.onrender.com/', // Set your fixed base URL here  'https://sibufishnmeat.co.uk'    'https://friendsmalayali.uk'
   headers: {
     'Content-Type': 'application/json',
     // 'Set-Cookie': 'secure',                                                                                  // 'Cache-Control': 'max-age=31536000', // Add the Cache-Control header
