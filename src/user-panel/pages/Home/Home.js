@@ -733,8 +733,8 @@ const Userhome = ({ userData, loadUserData }) => {
           <div
             className="main-heading only-mob montserrat-hard"
             style={{ color: `rgba(255, 255, 255, 1)` }}>
-            Your Next
-            <br /> Oval
+         
+            Oval
             <br /> Group of
             <br />Hi-Tech Farms
           </div>
