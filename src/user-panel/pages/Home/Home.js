@@ -482,18 +482,18 @@ const Userhome = ({ userData, loadUserData }) => {
     setContent1(!content1);
   }
 
-  const sections = [
-    { title: 'Healthcare', content: 'Empower your healthcare organisation with comprehensive IT services, fostering seamless operations, advanced data management, and robust security solutions. Enhance efficiency and connectivity within the healthcare industry, ensuring optimal performance and compliance in a rapidly evolving digital landscape.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown/Rectangle 185.png` },
-    { title: 'Technology', content: 'Strengthen your tech venture with our top IT services. Our solutions seamlessly integrate with your business, enhancing operational efficiency and fostering growth. From automation to cybersecurity, trust us for reliable support that aligns seamlessly with your technological aspirations.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown/Rectangle 186.png` },
-    { title: 'Telecom', content: 'Efficiently navigate the dynamic landscape of the Telecom industry with our specialised IT services. Streamline operations, enhance connectivity, and stay ahead in the competitive market. Our solutions are crafted to optimise performance and ensure seamless technological integration.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown/Rectangle 187.png` },
-    { title: 'Education', content: 'Enhance educational environments with proficient IT services designed to integrate technology seamlessly. Our solutions optimise connectivity, streamline operations, and foster a dynamic learning experience. Elevate your institution`s digital landscape with our specialised support for the education industry.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown/Rectangle 188.png` },
-    { title: 'Travel', content: 'Unlock the potential of your travel business with our IT services. Seamlessly integrate technology to enhance customer experiences, streamline operations, and stay ahead in the dynamic travel industry. Explore innovative solutions that redefine your journey towards success.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown/Rectangle 189.png`} ,
-    { title: 'Banking Services', content: 'Explore our dynamic suite of IT solutions designed exclusively for the banking industry. Seamlessly integrate innovative technologies to enhance operational efficiency, strengthen security protocols, and foster a resilient digital ecosystem. Elevate your banking experience with our specialised IT services.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown/Rectangle 190.png`} ,
-    { title: 'Insurance', content: 'Navigating the complex landscape of the insurance industry demands adept IT solutions. Our services address industry challenges head-on, offering nuanced support. From data security to streamlined processes, we ensure your insurance operations flourish in an ever-evolving digital landscape.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown/Rectangle 191.png` },
-    { title: 'Legal', content: 'Enhance your legal operations with our IT solutions, addressing industry challenges seamlessly. Streamline workflow, mitigate data security concerns, and enhance collaboration. Our services optimise your technology landscape, fostering efficiency and resilience in the dynamic legal environment.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown/Rectangle 192.png` },
-    { title: 'Media', content: 'Streamline your media business with our IT services, addressing industry challenges. We enhance efficiency, minimise downtime, and ensure seamless workflows. Our personalised solutions align with your unique needs, fostering innovation and growth in a dynamic media landscape.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown/Rectangle 193.png`} ,
-    { title: 'Pharma', content: 'Enhance pharmaceutical operations with our proficient IT services, seamlessly integrating technology to optimise processes. Streamline data management, ensure regulatory compliance, and fortify security protocols. Drive efficiency and innovation within the pharmaceutical realm, fostering a resilient and agile industry landscape.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown/Rectangle 194.png`},
-  ];
+  const sec6Data = [
+    { title: 'Boosts Immunity', content: 'Mushrooms contain beta-glucans, which stimulate the immune system and help the body fight infections and illnesses.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-1.jpg` },
+    { title: 'Rich in Antioxidants', content: 'Mushrooms are packed with antioxidants like ergothioneine and selenium, which protect cells from damage and reduce oxidative stress.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-2.avif` },
+    { title: 'Supports Brain Health', content: 'They contain nutrients like B vitamins and ergothioneine, which improve cognitive function and may reduce the risk of neurodegenerative diseases.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-3.jpg` },
+    { title: 'Promotes Heart Health', content: 'Mushrooms are cholesterol-free and contain compounds that lower bad cholesterol (LDL) while improving heart health.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-4.jpg` },
+    { title: 'Improves Gut Health', content: 'High in fiber and prebiotics, mushrooms support healthy gut bacteria and improve digestion.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-5.jpg` },
+    { title: 'Helps Manage Weight', content: 'Low in calories but rich in nutrients, mushrooms are a great addition to weight-loss diets and keep you feeling full longer.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-6.webp` },
+    { title: 'Balances Blood Sugar', content: 'The fiber in mushrooms helps stabilize blood sugar levels, reducing the risk of diabetes.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-7.jpg` },
+    { title: 'Provides Vitamin D', content: 'Mushrooms are one of the few natural plant sources of vitamin D, essential for bone health and immunity.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-8.jpg` },
+    { title: 'Fights Inflammation', content: 'Anti-inflammatory properties in mushrooms reduce chronic inflammation, improving overall health and preventing diseases.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-9.webp` },
+    { title: 'Enhances Energy Levels', content: 'Rich in B vitamins, mushrooms help convert food into energy, combating fatigue and supporting metabolic functions.', path: `${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-10.jpg` },
+      ];
 
 
 
@@ -726,17 +726,17 @@ const Userhome = ({ userData, loadUserData }) => {
           <div
             className="main-heading only-tab montserrat-hard"
             style={{ color: `rgba(255, 255, 255, 1)` }}>
-            Your Next Digital
-            <br /> Partner For Innovative
-            <br /> IT Services
+            Oval
+            <br />Group of
+            <br /> Hi-Tech Farms
           </div>
           <div
             className="main-heading only-mob montserrat-hard"
             style={{ color: `rgba(255, 255, 255, 1)` }}>
             Your Next
-            <br /> Digital Partner
-            <br /> For Innovative
-            <br />IT Services
+            <br /> Oval
+            <br /> Group of
+            <br />Hi-Tech Farms
           </div>
           <button
 
@@ -817,8 +817,8 @@ const Userhome = ({ userData, loadUserData }) => {
         <div className="slider-container montserrat-lit">
 
 
-          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Frame (2).svg`} className='arrow2-home' onClick={previous} />
-          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Frame (1).svg`} className='arrow1-home' onClick={next} />
+          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-left-arrow.svg`} className='arrow2-home' onClick={previous} />
+          <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-right-arrow.svg`} className='arrow1-home' onClick={next} />
           <Slider ref={sliderRef} {...settings}>
             <div>
               <div className='hm1' onClick={()=>navigate('/software-development')}>
@@ -827,7 +827,7 @@ const Userhome = ({ userData, loadUserData }) => {
                 >
                   <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-1.jpg`} className='imo' />
                   <div className='title'>White Oyster Mushrooms</div>
-                  <p>Craft innovative, high-quality software solutions for diverse business needs.</p>
+                  <p>We deliver fresh White oyster mushrooms directly to your home</p>
 
                 </div>
               </div>
@@ -840,7 +840,35 @@ const Userhome = ({ userData, loadUserData }) => {
                 >
                   <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-2.jpg`} className='imo' />
                   <div className='title'>Grey Oyster Mushrroms</div>
-                  <p>Harness the power of cloud computing for scalable and flexible solutions.</p>
+                  <p>We have grey veriety of oyster mushroms too, to make your flavour vivid.</p>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div>
+              <div className='hm1' onClick={()=>navigate('/cloud')}>
+                <div
+                  className="sliderimg"
+                >
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-7.webp`} className='imo' />
+                  <div className='title'>Dried Mushrroms</div>
+                  <p>Tired of Buying Everyday? Stock our Shade Dried Mushrooms which have 6 months of Shelflife and have all goodness of fresh mushrooms.</p>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div>
+              <div className='hm1' onClick={()=>navigate('/cloud')}>
+                <div
+                  className="sliderimg"
+                >
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-8.jpg`} className='imo' />
+                  <div className='title'> Mushroom Powder</div>
+                  <p>Enhance both taste and nutritional value by adding a pinch of mushroom powder to all your daily dishes.</p>
 
                 </div>
               </div>
@@ -854,7 +882,7 @@ const Userhome = ({ userData, loadUserData }) => {
                 >
                   <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-3.jpg`} className='imo' />
                   <div className='title'>Mushroom Spawn</div>
-                  <p>Boost efficiency and reduce manual efforts with streamlined, automated processes.</p>
+                  <p>Planning to cultivate mushrooms? We have high quality mushroom spawn.</p>
 
                 </div>
               </div>
@@ -867,7 +895,7 @@ const Userhome = ({ userData, loadUserData }) => {
                 >
                   <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-4.jpg`} className='imo' />
                   <div className='title'>Mushroom Beds</div>
-                  <p>Merge development and operations for faster, more reliable software delivery.</p>
+                  <p>Wish to reduce coast and eat mushrooms grown by yourself without any technical knowledge? Just by our ready to pluck beds</p>
                 </div>
               </div>
 
@@ -880,8 +908,8 @@ const Userhome = ({ userData, loadUserData }) => {
                   className="sliderimg"
                 >
                   <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-5.jpg`} className='imo' />
-                  <div className='title'>Technical Support</div>
-                    <p>Integrate security seamlessly into the development process for robust apps.</p>
+                  <div className='title'>Home Delivery</div>
+                    <p>We deliver at your Doorstep on orders above 900gms</p>
 
                 </div>
               </div>
@@ -892,10 +920,10 @@ const Userhome = ({ userData, loadUserData }) => {
                 <div
                   className="sliderimg"
                 >
-                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-6.jpg`} className='imo' />
+                  <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-6.webp`} className='imo' />
 
-                  <div className='title'>Home Delivery</div>
-                    <p>We deliver at your Doorstep on orders above 900gms</p>
+                  <div className='title'>Subscription Plans</div>
+                    <p>Switching to a healthy diet needs consistency. You dont need to worry about placing orders everyday. Just subscribe to our daily, weekly plans. </p>
 
                 </div>
               </div>
@@ -908,7 +936,7 @@ const Userhome = ({ userData, loadUserData }) => {
 
 
       <div className="subsection3-home">
-        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Isolation_Mode.svg`} className="build4u" alt="Build 4U" />
+        <img src={`zogglobal/home/sec-3.svg`} className="build4u" alt="Build 4U" />
         <span className="bl4text montserrat-hard">
           FOOD
           <span className={`rotating-text ${scrollDirection === 'up' ? 'rotate' : ''}`}>
@@ -920,9 +948,9 @@ const Userhome = ({ userData, loadUserData }) => {
           HEALTH
         </span>
         <p className="montserrat-lit">
-          <span className="montserrat-hard">Health without compromising Taste -</span>
+          <span className="montserrat-hard">Health without compromising Taste</span>
           <br />
-          You no longer need to compromise taste to keep you healthy. Just Switch to mushrooms
+          You no longer need to compromise taste to keep you healthy. <br/>Just Switch to MUSHROOMS!!
         </p>
       </div>
 
@@ -931,8 +959,8 @@ const Userhome = ({ userData, loadUserData }) => {
           <p>Mushroom Dishes</p>
           <div className="hr1-homepage"></div>
           <div className='arr-absl'>
-            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Frame (2).svg`} className='arr-homepage' onClick={previous2} />
-            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Frame (1).svg`} className='arr-homepage' onClick={next2} />
+            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-4-left-arrow.svg`} className='arr-homepage' onClick={previous2} />
+            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-4-right-arrow.svg`} className='arr-homepage' onClick={next2} />
           </div>
         </div>
 
@@ -942,13 +970,13 @@ const Userhome = ({ userData, loadUserData }) => {
               <div>
                 <div className="pageinslider montserrat-lit">
                   <span>01</span>
-                  <p>Website Security Audit</p>
+                  <p>Mushroom Fry</p>
                 </div>
                 <div
                   className="sliderimg"
                   style={{
                     backgroundImage:
-                      'url({`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/cybersec/Rectangle 187 (1).png`})',
+                      `url(${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-4-1.jpg)`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}>
@@ -959,13 +987,13 @@ const Userhome = ({ userData, loadUserData }) => {
               <div>
                 <div className="pageinslider montserrat-lit">
                   <span>02</span>
-                  <p>IT Systems Audit</p>
+                  <p>Mushroom Dry Fry</p>
                 </div>
                 <div
                   className="sliderimg"
                   style={{
                     backgroundImage:
-                      'url({`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/cybersec/Rectangle 187 (2).png`})',
+                      `url(${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-4-2.jpg)`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}>
@@ -976,13 +1004,13 @@ const Userhome = ({ userData, loadUserData }) => {
               <div>
                 <div className="pageinslider montserrat-lit">
                   <span>03</span>
-                  <p>Penetration Testing</p>
+                  <p>Mushroom Curry</p>
                 </div>
                 <div
                   className="sliderimg"
                   style={{
                     backgroundImage:
-                      'url({`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/cybersec/Rectangle 187 (4).png`})',
+                      `url(${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-4-3.webp)`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}>
@@ -993,13 +1021,13 @@ const Userhome = ({ userData, loadUserData }) => {
               <div>
                 <div className="pageinslider montserrat-lit">
                   <span>04</span>
-                  <p>GDPR Advisory</p>
+                  <p>Mushroom Upperi</p>
                 </div>
                 <div
                   className="sliderimg"
                   style={{
                     backgroundImage:
-                      'url({`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/cybersec/Rectangle 187 (5).png`})',
+                      `url(${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-4-4.jpg)`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}>
@@ -1010,13 +1038,13 @@ const Userhome = ({ userData, loadUserData }) => {
               <div>
                 <div className="pageinslider montserrat-lit">
                   <span>05</span>
-                  <p>ISO27001 Advisory</p>
+                  <p>Mushroom Fry</p>
                 </div>
                 <div
                   className="sliderimg"
                   style={{
                     backgroundImage:
-                      'url({`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/cybersec/Rectangle 187 (6).png`})',
+                      `url(${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-4-1.jpg)`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}>
@@ -1027,13 +1055,13 @@ const Userhome = ({ userData, loadUserData }) => {
               <div>
                 <div className="pageinslider montserrat-lit">
                   <span>06</span>
-                  <p> PCI-DSS Advisory</p>
+                  <p> Mushroom Dry Fry</p>
                 </div>
                 <div
                   className="sliderimg"
                   style={{
                     backgroundImage:
-                      'url({`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/cybersec/Rectangle 187 (7).png`})',
+                      `url(${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-4-2.jpg)`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}>
@@ -1051,7 +1079,7 @@ const Userhome = ({ userData, loadUserData }) => {
           <div className='hr2'></div>
         </div>
         <div className='contentdiv-home montserrat-hard'>
-          <p className='montserrat-hard'>Industries We <span>Cover</span></p>
+          <p className='montserrat-hard'>Benefits of <span>Mushrooms</span></p>
         </div>
 
 
@@ -1061,12 +1089,12 @@ const Userhome = ({ userData, loadUserData }) => {
 
       <div className='sec6-homepage'>
         <div className='maincontentdiv-sec6-home'>
-          {sections.map((section, index) => (
+          {sec6Data.map((section, index) => (
             <div className='firstdiv-sec6' key={index}>
               <div className='title-sec6' onClick={() => handleSectionClick(index)}>
                 <span className='montserrat-hard'>{section.title}</span>
                 <img
-                  src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Vector (5).svg`}
+                  src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-down-arrow.svg`}
                   alt="Toggle Content"
                   className={activeSection === index ? 'rotate' : ''}
                 />
@@ -1080,12 +1108,12 @@ const Userhome = ({ userData, loadUserData }) => {
         <div className='forimage-sec6-home'>
           {activeSection !== null ? (
             <img
-              src={sections[activeSection].path}
+              src={sec6Data[activeSection].path}
               className='sec6-img'
-              alt={sections[activeSection].title}
+              alt={sec6Data[activeSection].title}
             />
           ) :
-            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/content-dropdown\Rectangle 185.png`} className='sec6-img' />}
+            <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-6-1.jpg`} className='sec6-img' />}
         </div>
 
       </div>
@@ -1108,7 +1136,7 @@ const Userhome = ({ userData, loadUserData }) => {
 
         <div className='forimage-sec7' style={{
           backgroundImage:
-            'url({`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Contact-form-home.png`})',
+            `url(${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/Contact-form-home.png`})',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}>

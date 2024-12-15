@@ -250,9 +250,9 @@ const View = () => {
         titleWeb={"Let's Start a<br/> Conversation.<br/> We Can help!"}
         titleTab={"Let's Start a<br/> Conversation.<br/> We Can help!"}
         titleMob={"Let's Start a Conversation.<br/> We Can help!"}
-        subTitleWeb={"Reach out to our team for expert IT support and<br/> solutions. To assist you better, please fill out the form below."}
-        subTitleTab={"Reach out to our team for expert IT support and<br/> solutions. To assist you better, please fill out the<br/> form below."}
-        subTitleMob={"Reach out to our team for expert IT support and solutions. To assist you better, please fill out the form below."}>
+        subTitleWeb={"Reach out to our team for any query<br/> solutions. To assist you better, please fill out the form below."}
+        subTitleTab={"Reach out to our team for any query<br/> solutions. To assist you better, please fill out the<br/> form below."}
+        subTitleMob={"Reach out to our team for any query solutions. To assist you better, please fill out the form below."}>
       </Banner>
       <div className='scroll-btn-container'>
         <button className='scroll-down-btn' onClick={scrollToDiv}>Get Support Now
@@ -264,17 +264,17 @@ const View = () => {
         <div className='inner'>
           <div className='segment'>
             <div className='sub-title'>Location</div>
-            <div className='text'>Suite V3, Woodland Road,
-              Darlington, DL3 7PJ,
-              United Kingdom</div>
+            <div className='text'>Head office, Oval Farms, Koothali
+              Kozhikode, 673525,
+              India</div>
           </div>
           <div className='segment'>
             <div className='sub-title'>Mail</div>
-            <div className='text'>connect@zogglobal.com</div>
+            <div className='text'>ovaleggfarm@gmail.com</div>
           </div>
           <div className='segment'>
             <div className='sub-title'>Phone</div>
-            <div className='text'>02045424350</div>
+            <div className='text'>9605556054</div>
           </div>
         </div>
       </div>

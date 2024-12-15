@@ -35,7 +35,7 @@ const BannerMainPages = ({ pageName, titleWeb, titleTab, titleMob, subTitleWeb, 
 
 
   return (
-    <div className='banner' style={{ backgroundImage: `url("/images/${pageName}/banner-${window.innerWidth < 768 ? "mob" : window.innerWidth < 992 ? "tab" : "web"}.png")` }}>
+    <div className='banner' style={{ backgroundImage: `url("${process.env.REACT_APP_PUBLIC_IMAGES_URL}/${pageName}/banner-${window.innerWidth < 768 ? "mob" : window.innerWidth < 992 ? "tab" : "web"}.png")` }}>
 
       <div className='inner' ref={mainHRef}>
 
