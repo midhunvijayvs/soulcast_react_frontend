@@ -936,7 +936,7 @@ const Userhome = ({ userData, loadUserData }) => {
 
 
       <div className="subsection3-home">
-        <img src={`zogglobal/home/sec-3.svg`} className="build4u" alt="Build 4U" />
+        <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-3.svg`} className="build4u" alt="Build 4U" />
         <span className="bl4text montserrat-hard">
           FOOD
           <span className={`rotating-text ${scrollDirection === 'up' ? 'rotate' : ''}`}>
