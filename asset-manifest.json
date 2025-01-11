@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.511ecded.css",
-    "main.js": "/static/js/main.5245d5dc.js",
+    "main.js": "/static/js/main.fa0afe55.js",
     "static/js/453.a2a63e3f.chunk.js": "/static/js/453.a2a63e3f.chunk.js",
     "static/media/WorkSans-VariableFont_wght.ttf": "/static/media/WorkSans-VariableFont_wght.a0297787a1a192213b53.ttf",
     "static/media/WorkSans-Italic-VariableFont_wght.ttf": "/static/media/WorkSans-Italic-VariableFont_wght.909e4faac8822880e462.ttf",
@@ -10,11 +10,11 @@
     "static/media/prev-arrow-black-web.svg": "/static/media/prev-arrow-black-web.a52124b7fc586ca7b41e.svg",
     "static/media/next-arrow-black-web.svg": "/static/media/next-arrow-black-web.57b322f8a1f8195ba6a0.svg",
     "main.511ecded.css.map": "/static/css/main.511ecded.css.map",
-    "main.5245d5dc.js.map": "/static/js/main.5245d5dc.js.map",
+    "main.fa0afe55.js.map": "/static/js/main.fa0afe55.js.map",
     "453.a2a63e3f.chunk.js.map": "/static/js/453.a2a63e3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.511ecded.css",
-    "static/js/main.5245d5dc.js"
+    "static/js/main.fa0afe55.js"
   ]
 }
