@@ -37,7 +37,7 @@ function App() {
 
     <div className="App">
 
-      <Router basename="/soulcast_react_frontend">
+      <Router>
         <UserProvider>
           <Routes>
 
