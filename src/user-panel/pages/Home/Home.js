@@ -839,8 +839,8 @@ const Userhome = ({ userData, loadUserData }) => {
                   className="sliderimg"
                 >
                   <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-2.jpg`} className='imo' />
-                  <div className='title'>Grey Oyster Mushrroms</div>
-                  <p>We have grey veriety of oyster mushroms too, to make your flavour vivid.</p>
+                  <div className='title'>Grey Oyster Mushrooms</div>
+                  <p>We have grey veriety of oyster mushrooms too, to make your flavour vivid.</p>
 
                 </div>
               </div>
@@ -853,7 +853,7 @@ const Userhome = ({ userData, loadUserData }) => {
                   className="sliderimg"
                 >
                   <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-7.webp`} className='imo' />
-                  <div className='title'>Dried Mushrroms</div>
+                  <div className='title'>Dried Mushrooms</div>
                   <p>Tired of Buying Everyday? Stock our Shade Dried Mushrooms which have 6 months of Shelflife and have all goodness of fresh mushrooms.</p>
 
                 </div>
@@ -895,7 +895,7 @@ const Userhome = ({ userData, loadUserData }) => {
                 >
                   <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/home/sec-2-4.jpg`} className='imo' />
                   <div className='title'>Mushroom Beds</div>
-                  <p>Wish to reduce coast and eat mushrooms grown by yourself without any technical knowledge? Just by our ready to pluck beds</p>
+                  <p>Wish to reduce cost and eat mushrooms grown by yourself without any technical knowledge? Just by our ready to pluck beds</p>
                 </div>
               </div>
 
