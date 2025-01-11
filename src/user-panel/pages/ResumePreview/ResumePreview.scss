@@ -9,6 +9,10 @@
   $rhsLeftPadding: 70px;
   *font-family: "Gothic A1", sans-serif;
 
+  .print-wrapper {
+    position: static;
+  }
+
   .page {
 
     height: fit-content;
@@ -17,15 +21,17 @@
     border: 1px solid rgb(116, 116, 116);
     position: relative;
     background-color: #fff;
-.download-button{
-  position: fixed;
-  top: 200px;
-  right: 50px;
-  background-color: $primaryColor;
-  color: #fff;
-  padding: 10px 20px;
-  z-index: 3;
-}
+
+    .download-button {
+      position: fixed;
+      top: 200px;
+      right: 50px;
+      background-color: $primaryColor;
+      color: #fff;
+      padding: 10px 20px;
+      z-index: 3;
+    }
+
     .side-pane {
       background-color: $primaryColor;
       color: #fff;
@@ -46,7 +52,8 @@
 
     .main-content {
       width: $pdfWidth;
-      position: absolute;
+    height: fit-content;
+    position: absolute;
       z-index: 2;
       left: auto;
       right: 0;
@@ -186,7 +193,8 @@
 
           .lhs {
             align-items: flex-start;
-            .text{
+
+            .text {
               font-size: 23px;
               font-weight: 500;
               color: #fff;

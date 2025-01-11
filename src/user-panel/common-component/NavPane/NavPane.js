@@ -89,7 +89,7 @@ const NavPane = ({ setterFunction }) => {
                     </ul>
                     <ul>
                         <li onClick={() => { navigate("/"); setterFunction(false) }}>PAGE IN PROGRESS</li>
-                        <li onClick={() => { navigate("/"); setterFunction(false) }}>PAGE IN PROGRESS</li>
+                        <li onClick={() => { navigate("/resume-list"); setterFunction(false) }}>PAGE IN PROGRESS</li>
                         <li onClick={() => { navigate("/"); setterFunction(false) }}>PAGE IN PROGRESS</li>
 
                     </ul>

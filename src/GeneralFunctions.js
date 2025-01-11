@@ -63,32 +63,14 @@ export const fetchInvoiceDataAndGeneratePdf = async (id) => {
 };
 
 
-export const fetchResumeDataAndGeneratePdf = async (id) => {
-    try {
-        const response = await API.get(`download-resume/${id}/`);
-        const invoiceData = response.data.invoice_data;
+export const fetchResumeDataAndGeneratePdf = async (resumeData) => {
 
-        // Generate and save PDF blob
-        const blob = await pdf(
+    console.log("resumeData",resumeData)
+    const blob = await pdf(
 
-            <ResumeTemplate invoiceData={invoiceData} />
+        <ResumeTemplate resumeData={resumeData} />
 
-        ).toBlob();
+    ).toBlob();
 
-        saveAs(blob, 'resume.pdf'); // Automatically trigger download. save as is a very useful library to download files. it will replace the following 9 commented lines
-
-        //   const blobUrl = URL.createObjectURL(blob);
-        //   const a = document.createElement('a');
-        //   a.style.display = 'none';
-        //   a.href = blobUrl;
-        //   a.download = 'invoice.pdf';
-        //   document.body.appendChild(a);
-        //   a.click();
-        //   document.body.removeChild(a);
-        //   URL.revokeObjectURL(blobUrl);
-        // 
-    }
-    catch (error) {
-        console.error('Error fetching invoice data:', error);
-    }
+    saveAs(blob, 'resume.pdf'); 
 };

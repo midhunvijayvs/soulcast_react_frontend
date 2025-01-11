@@ -1,0 +1,36 @@
+.resume-list-page {
+  width: 100vw;
+  .sec-1{
+    width: 1300px;
+    margin: 160px auto 0 auto;
+
+    .table-box{
+      width:100%;
+      min-height: 600px;
+      table{
+        table-layout: auto;
+        width: 100%;
+        border-collapse:separate;
+        border: 1px solid #ddd;
+        text-align: left;
+        th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+td{
+  .action-btn-box{
+    display: flex;
+    align-items: center;
+    button{
+      img{
+        height: 20px;
+      }
+    }
+  }
+}
+      }
+    }
+  }
+
+}

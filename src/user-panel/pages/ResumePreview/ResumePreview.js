@@ -1,22 +1,27 @@
 import React, { useEffect, useState, useRef } from 'react'
 import './ResumePreview.scss'
-
+import { useParams } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
 import ErrorModal from "../../../ErrorModal.js";
 import PositiveModal from "../../../PositiveModal.js";
 import FixedOverlayLoadingSpinner from "../../../FixedOverlayLoadingSpinner.js"
 import $ from 'jquery';
-
+import API from "../../../API.js"
 
 import {fetchResumeDataAndGeneratePdf} from '../../../GeneralFunctions'
 
 
-
 const ResumePreview = ({ userData, loadUserData }) => {
   const navigate = useNavigate();
-
-
+  const { id } = useParams(); // Extract 'id' from the URL
+  
+  const mainContentRef = useRef(null);
+  const sidePaneRef = useRef(null);
+  const pageRef = useRef(null);
+  
+  
+  const [data, setData] = useState(0);
   const [tabSelected, selectTab] = useState(0);
 
   const [message, setMessage] = useState(null);
@@ -28,180 +33,178 @@ const ResumePreview = ({ userData, loadUserData }) => {
   const [bannerSoundOn, setBannerSoundOn] = useState(false)
   const [videoSrc, setVideoSrc] = useState('');
 
-  const data = {
-    name: "midhun vijay v s",
-    title: "Exceptional Technical Aptitude, Innovative Architectural Vision, 2year and 11 months Full Time Industrial Experience + 3 Months training course + 3 Years Hobby Freelance Experience.",
-    email: "midhunvijayvs@gmail.com",
-    phone: "+919605556054",
-    house_name: "Saketham",
-    room_number: "",
-    posttown: "Koothali",
-    sub_city: "Perambra",
-    city: "Kozhikode",
-    state: "Kerala",
-    country: "India",
-    summary: "A genius level technical problem solver. Have broad and deep knowledge, skills and true enthusiasm in general science and technology. Educated myself for the aptitude that, Learning a technology is not about just learning how to use the tools, It is also the development of the temper to use the tool for the creative betterment of the systems. Always try to Learn a tool by understanding the exact working mechanism and intention of making the tool clearly and deeply. Hence I am a fast learner and after learning, can apply it creatively and in the best productive way.",
-    career_objective: "To be one of the best Engineers on the planet. To contribute breakthrough innovative ideas to the technical knowledge pool of the world.",
-    soft_skills: [
-      "Outstanding Technical Aptitude - I love  to build and alter Machines  ",
-      "Outstanding Creativity- Have  good sense of technical designing,  can Invent, Design, Improve and make significant changes",
-      "Excellent Communication skill- Can explain ideas effectively.  ",
-      "Excellent in critical Analysis and problem solving – can make solutions to any critical problems if it is solvable by any human being. ",
-      "Right Vision-I can make prophecy on the future of a system and architectural decisions based on scientific and rational analysis ",
-      "Can manage and make result of a work with minimum guidance and supervision in a competitive environment ",
+  // const data = {
+  //   name: "midhun vijay v s",
+  //   title: "Exceptional Technical Aptitude, Innovative Architectural Vision, 2year and 11 months Full Time Industrial Experience + 3 Months training course + 3 Years Hobby Freelance Experience.",
+  //   email: "midhunvijayvs@gmail.com",
+  //   phone: "+919605556054",
+  //   house_name: "Saketham",
+  //   room_number: "",
+  //   posttown: "Koothali",
+  //   sub_city: "Perambra",
+  //   city: "Kozhikode",
+  //   state: "Kerala",
+  //   country: "India",
+  //   summary: "A genius level technical problem solver. Have broad and deep knowledge, skills and true enthusiasm in general science and technology. Educated myself for the aptitude that, Learning a technology is not about just learning how to use the tools, It is also the development of the temper to use the tool for the creative betterment of the systems. Always try to Learn a tool by understanding the exact working mechanism and intention of making the tool clearly and deeply. Hence I am a fast learner and after learning, can apply it creatively and in the best productive way.",
+  //   career_objective: "To be one of the best Engineers on the planet. To contribute breakthrough innovative ideas to the technical knowledge pool of the world.",
+  //   soft_skills: [
+  //     "Outstanding Technical Aptitude - I love  to build and alter Machines  ",
+  //     "Outstanding Creativity- Have  good sense of technical designing,  can Invent, Design, Improve and make significant changes",
+  //     "Excellent Communication skill- Can explain ideas effectively.  ",
+  //     "Excellent in critical Analysis and problem solving – can make solutions to any critical problems if it is solvable by any human being. ",
+  //     "Right Vision-I can make prophecy on the future of a system and architectural decisions based on scientific and rational analysis ",
+  //     "Can manage and make result of a work with minimum guidance and supervision in a competitive environment ",
 
-    ],
-    technical_skills: [
-      "HTML",
-      "CSS",
-      "SAAS",
-      "JS",
-      "ReactJS",
-      "Django",
-      "Laravel",
-    ],
+  //   ],
+  //   technical_skills: [
+  //     "HTML",
+  //     "CSS",
+  //     "SAAS",
+  //     "JS",
+  //     "ReactJS",
+  //     "Django",
+  //     "Laravel",
+  //   ],
 
-    work_history: [
-      {
-        title: "Android Application Developer",
-        company: "Freelance",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        from_date: "02-2014",
-        to_date: " 02-2021",
-        short_description: "Freelance",
-        detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
-      },
-      {
-        title: "Android Application Developer",
-        company: "Freelance",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        from_date: "02-2014",
-        to_date: " 02-2021",
-        short_description: "Freelance",
-        detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
-      },
-      {
-        title: "Android Application Developer",
-        company: "Freelance",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        from_date: "02-2014",
-        to_date: " 02-2021",
-        short_description: "Freelance",
-        detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
-      },
-      {
-        title: "Android Application Developer",
-        company: "Freelance",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        from_date: "02-2014",
-        to_date: " 02-2021",
-        short_description: "Freelance",
-        detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
-      },
-      {
-        title: "Android Application Developer",
-        company: "Freelance",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        from_date: "02-2014",
-        to_date: " 02-2021",
-        short_description: "Freelance",
-        detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
-      },
-      {
-        title: "Android Application Developer",
-        company: "Freelance",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        from_date: "02-2014",
-        to_date: " 02-2021",
-        short_description: "Freelance",
-        detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
-      },
+  //   work_history: [
+  //     {
+  //       title: "Android Application Developer",
+  //       company: "Freelance",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //      
+  //       from_date: "02-2014",
+  //       to_date: " 02-2021",
+  //       short_description: "Freelance",
+  //       detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
+  //     },
+  //     {
+  //       title: "Android Application Developer",
+  //       company: "Freelance",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       from_date: "02-2014",
+  //       to_date: " 02-2021",
+  //       short_description: "Freelance",
+  //       detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
+  //     },
+  //     {
+  //       title: "Android Application Developer",
+  //       company: "Freelance",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       from_date: "02-2014",
+  //       to_date: " 02-2021",
+  //       short_description: "Freelance",
+  //       detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
+  //     },
+  //     {
+  //       title: "Android Application Developer",
+  //       company: "Freelance",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       from_date: "02-2014",
+  //       to_date: " 02-2021",
+  //       short_description: "Freelance",
+  //       detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
+  //     },
+  //     {
+  //       title: "Android Application Developer",
+  //       company: "Freelance",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       from_date: "02-2014",
+  //       to_date: " 02-2021",
+  //       short_description: "Freelance",
+  //       detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
+  //     },
+  //     {
+  //       title: "Android Application Developer",
+  //       company: "Freelance",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       from_date: "02-2014",
+  //       to_date: " 02-2021",
+  //       short_description: "Freelance",
+  //       detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
+  //     },
 
-    ],
+  //   ],
 
-    education: [
-      {
-        title: "Android Application Developer",
-        company: "Freelance",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        from_date: "02-2014",
-        to_date: " 02-2021",
-        short_description: "Freelance",
-        detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
-      },
-    ],
+  //   education: [
+  //     {
+  //       title: "Android Application Developer",
+  //       company: "Freelance",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       from_date: "02-2014",
+  //       to_date: " 02-2021",
+  //       short_description: "Freelance",
+  //       detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
+  //     },
+  //   ],
 
-    accomplishments: [
-      {
-        title: "Android Application Developer",
-        company: "Freelance",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        from_date: "02-2014",
-        to_date: " 02-2021",
-        short_description: "Freelance",
-        detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
-      },
-    ],
+  //   accomplishments: [
+  //     {
+  //       title: "Android Application Developer",
+  //       company: "Freelance",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       from_date: "02-2014",
+  //       to_date: " 02-2021",
+  //       short_description: "Freelance",
+  //       detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
+  //     },
+  //   ],
 
-    certifications: [
-      {
-        title: "Android Application Developer",
-        company: "Freelance",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        from_date: "02-2014",
-        to_date: " 02-2021",
-        short_description: "Freelance",
-        detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
-      },
-    ],
+  //   certifications: [
+  //     {
+  //       title: "Android Application Developer",
+  //       company: "Freelance",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       from_date: "02-2014",
+  //       to_date: " 02-2021",
+  //       short_description: "Freelance",
+  //       detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
+  //     },
+  //   ],
 
-    hobbies: [
-      {
-        title: "Android Application Developer",
-        company: "Freelance",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        company_city:"Kozhikode",
-        company_state:"Kerala",
-        company_country:"India",
-        from_date: "02-2014",
-        to_date: " 02-2021",
-        short_description: "Freelance",
-        detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
-      },
-    ],
-  }
+  //   hobbies: [
+  //     {
+  //       title: "Android Application Developer",
+  //       company: "Freelance",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       company_city:"Kozhikode",
+  //       company_state:"Kerala",
+  //       company_country:"India",
+  //       from_date: "02-2014",
+  //       to_date: " 02-2021",
+  //       short_description: "Freelance",
+  //       detailed_description: "Created a number of applications for personal and business uses including a high end mathematical processing app for calculating quantity of content to be added to mix feed for our farming business.  Designed user interfaces that engaged multiple senses and produced. immersive experiences. Java:- Used java as the functional language for the applications. Expert in all basic functionalities of java. xml :- Used xml for designing UI for the app. oops :- Used all possibilities of the oops concept in java, gained expert level knowledge and working skills on oops concepts.",
+  //     },
+  //   ],
+  // }
 
   // useEffect(() => {
   //   $(function () {
@@ -213,35 +216,61 @@ const ResumePreview = ({ userData, loadUserData }) => {
 
 
 
+  useEffect(() => {
+
+    API.get(`/resume-builder/resumes/${id}`)
+
+      .then((response) => {
+
+        setData(response.data); // Only take the first 4 items
+        setIsLoading(false)
+
+
+
+      })
+      .catch((error) => {
+        if (error.response) {
+          setMessage(error.response.data.message);
+          setIsErrorModalOpen(true)
+        }
+        setIsLoading(false)
+
+      });
+  }, [])
 
 
   useEffect(() => {
-    // Ensure the DOM is fully loaded
-    $(document).ready(function() {
-      // Get the height of the main-content div
-      const mainContentHeight = $('.main-content').height();
-      
-      // Apply the same height to the side-pane and page divs
-      $('.side-pane').height(mainContentHeight);
-      $('.page').height(mainContentHeight);
-    });
+    const adjustHeights = () => {
+      const mainContentHeight = mainContentRef.current?.offsetHeight || 0;
+      if (sidePaneRef.current) sidePaneRef.current.style.height = `${mainContentHeight}px`;
+      if (pageRef.current) pageRef.current.style.height = `${mainContentHeight}px`;
+    };
+
+    // Adjust heights initially
+    adjustHeights();
+
+    // Optionally: Add a resize event listener if the layout may change
+    window.addEventListener("resize", adjustHeights);
+
+    return () => {
+      window.removeEventListener("resize", adjustHeights);
+    };
   }, []);
 
 
-
+ 
 
   return (
     <div className='resume-preview-page'>
 
 
-
-      <div className='page'>
-        <button className='download-button' onClick={()=>fetchResumeDataAndGeneratePdf(1)}>Download PDF</button>
-        <div className='side-pane'>
+      <div className='page' ref={pageRef}>
+        <button className='download-button'onClick={() => fetchResumeDataAndGeneratePdf(data)}>Download PDF</button>
+        <div className='side-pane'  ref={sidePaneRef}>
 
         </div>
 
-        <div className='main-content'>
+        <div className='main-content' ref={mainContentRef}>
 
 
           <div className='section top-section'>
@@ -325,7 +354,7 @@ const ResumePreview = ({ userData, loadUserData }) => {
 
               <div className='rhs'>
                 <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/skills.svg`}></img>
-                <h1>Skills</h1>
+                <h1>Soft Skills</h1>
               </div>
 
             </div>
@@ -340,7 +369,7 @@ const ResumePreview = ({ userData, loadUserData }) => {
                     <img src={`${process.env.REACT_APP_PUBLIC_IMAGES_URL}/resume-preview-page/timeline-bullet.svg`}></img>
 
                     <div className='center-part'>
-                      <p className='text'>{item}</p>
+                      <p className='text'>{item.skill}</p>
                     </div>
 
                     <div className='right-part'>
@@ -459,7 +488,7 @@ const ResumePreview = ({ userData, loadUserData }) => {
 
             </div>
 
-            {data && data.certifications.map((item, index) => {
+            {data && data.certifications&&data.certifications.map((item, index) => {
               return (
                 <div className='timeline-segment'>
                   <div className='lhs'>
@@ -579,7 +608,7 @@ const ResumePreview = ({ userData, loadUserData }) => {
 
         </div>
       </div>
-
+   
       {isLoading && <FixedOverlayLoadingSpinner />}
 
 

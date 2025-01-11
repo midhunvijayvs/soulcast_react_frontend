@@ -2,22 +2,22 @@ import React from 'react';
 import { Document, Page, Text, View, StyleSheet, Image, Font } from '@react-pdf/renderer';
 
 
-Font.register({
-  family: "Poppins",
-  src: "/fonts/Poppins/Poppins Regular 400.ttf",
-})
-Font.register({
-  family: "PoppinsSemiBold",
-  src: "/fonts/Poppins/Poppins SemiBold 600.ttf",
-})
-Font.register({
-  family: "PoppinsBold",
-  src: "/fonts/Poppins/Poppins Bold 700.ttf",
-})
+// Font.register({
+//   family: "Poppins",
+//   src: "/fonts/Poppins/Poppins Regular 400.ttf",
+// })
+// Font.register({
+//   family: "PoppinsSemiBold",
+//   src: "/fonts/Poppins/Poppins SemiBold 600.ttf",
+// })
+// Font.register({
+//   family: "PoppinsBold",
+//   src: "/fonts/Poppins/Poppins Bold 700.ttf",
+// })
 
 const styles = StyleSheet.create({
   container: {
-    fontFamily: 'Poppins',
+    
     //fontSize: 12,
     padding: 40,
   },
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     color: '#E05A67',
     fontSize: 13,
-    fontFamily: 'PoppinsSemiBold',
+    
     flexDirection: 'row',
     justifyContent: 'flex-end',
   },
@@ -113,32 +113,32 @@ marginTop:15,
   th:{
 
     fontSize: 10,
-    fontFamily: 'PoppinsSemiBold',
+    
   },
   td:{
     fontSize: 10,
-    fontFamily: 'Poppins',
+    
   },
   slHead:{
     fontSize: 10,
-    fontFamily: 'PoppinsSemiBold',
+    
     marginRight:0
   },
   sl:{
     fontSize: 10,
-    fontFamily: 'Poppins',
+    
     marginRight:0
   },
   nameHead:{
     fontSize: 10,
-    fontFamily: 'PoppinsSemiBold',
+    
     marginLeft:0,
     width:150,
     textAlign:"left"
   },
   name:{
     fontSize: 10,
-    fontFamily: 'Poppins',
+    
     marginLeft:0,
     width:150,
     textAlign:"left"
@@ -157,7 +157,7 @@ marginTop:15,
   thankYou: {
     color: '#97262c',
     textAlign: 'left',
-    fontFamily:"PoppinsSemiBold",
+    
     fontSize: 9,
     fontWeight: 700,
     opacity:0
@@ -171,7 +171,7 @@ marginTop:15,
     color: '#202020',
     textAlign: 'right',
     fontSize: 12,
-    fontFamily: 'PoppinsSemiBold',
+    
     fontWeight: 900,
     marginBottom: 10,
     flexDirection: 'row',
@@ -181,7 +181,7 @@ marginTop:15,
     color: '#97262c',
     textAlign: 'right',
     fontSize: 14,
-    fontFamily: 'PoppinsBold',
+    
     fontWeight: 900,
     textTransform: 'capitalize',
     marginBottom: 10,
@@ -212,8 +212,11 @@ marginTop:15,
   },
 });
 
-const invoicePDFGenerator = ({ invoiceData }) =>
- (
+const invoicePDFGenerator = ({ resumeData }) =>
+
+
+  (
+  
   <Document>
     <Page size="A4" style={styles.container}>
       <View style={styles.invoiceHeader}>
@@ -231,19 +234,19 @@ const invoicePDFGenerator = ({ invoiceData }) =>
         <View style={styles.invoiceInfo}>
           <View style={styles.invoiceNumber}>
             <Text>Invoice # :</Text>
-            <Text>{invoiceData.invoice_number}</Text>
+            <Text>{resumeData.invoice_number}</Text>
           </View>
           <View style={styles.invoiceOrderId}>
             <Text>Order ID :</Text>
-            <Text>{invoiceData.order_id}</Text>
+            <Text>{resumeData.order_id}</Text>
           </View>
           <View style={styles.invoiceIssueDate}>
             <Text>Date Issued :</Text>
-            <Text>{invoiceData.issued_date}</Text>
+            <Text>{resumeData.issued_date}</Text>
           </View>
           <View style={styles.invoiceDueDate}>
             <Text>Date Due :</Text>
-            <Text>{invoiceData.due_date}</Text>
+            <Text>{resumeData.due_date}</Text>
           </View>
         </View>
       </View>
@@ -253,24 +256,24 @@ const invoicePDFGenerator = ({ invoiceData }) =>
           <View style={styles.sectionTitle}>
             <Text>Invoice To:</Text>
           </View>
-          <Text>{invoiceData.firstname} {invoiceData.lastname}</Text>
+          <Text>{resumeData.name}</Text>
          
-          <Text>{invoiceData.invoice_to_address_line_1}</Text>
-          <Text>{invoiceData.invoice_to_address_line_2}</Text>
-          <Text>{invoiceData.invoice_to_address_city}</Text>
-          <Text>{invoiceData.invoice_to_address_zip_code}</Text>
+          <Text>{resumeData.name}</Text>
+          <Text>{resumeData.name}</Text>
+          <Text>{resumeData.name}</Text>
+          <Text>{resumeData.name}</Text>
         </View>
 
         <View style={styles.invoiceAddress}>
           <View style={styles.sectionTitle}>
             <Text>Bill To:</Text>
           </View>
-          <Text>{invoiceData.firstname} {invoiceData.lastname}</Text>
+          <Text>{resumeData.name} {resumeData.name}</Text>
          
-          <Text>{invoiceData.bill_to_address_line_1}</Text>
-          <Text>{invoiceData.bill_to_address_line_2}</Text>
-          <Text>{invoiceData.bill_to_address_city}</Text>
-          <Text>{invoiceData.bill_to_address_zip_code}</Text>
+          <Text>{resumeData.name}</Text>
+          <Text>{resumeData.name}</Text>
+          <Text>{resumeData.name}</Text>
+          <Text>{resumeData.name}</Text>
         </View>
       </View>
 
@@ -288,14 +291,14 @@ const invoicePDFGenerator = ({ invoiceData }) =>
           </View>
           <View style={styles.tbody}>
             {/* Map through invoice items */}
-            {invoiceData.items.map((order_item, index) => {
+            {resumeData.soft_skills.map((order_item, index) => {
             return (
               <View style={styles.tr} key={index}>
               <Text style={styles.sl}>{index + 1}</Text>
-                <Text style={styles.name}>{order_item.product_name}</Text>
-                <Text style={styles.td}>{order_item.quantity}</Text>
-                <Text style={styles.td}>{order_item.unit_price}</Text>
-                <Text style={styles.td}>{order_item.total_price}</Text>
+                <Text style={styles.name}>{order_item.name}</Text>
+                <Text style={styles.td}>{order_item.name}</Text>
+                <Text style={styles.td}>{order_item.name}</Text>
+                <Text style={styles.td}>{order_item.name}</Text>
               </View>
             )
             }
@@ -313,11 +316,11 @@ const invoicePDFGenerator = ({ invoiceData }) =>
         <View style={styles.totalAmounts}>
           <View  style={styles.subTotal} >
             <Text>SUB TOTAL:&nbsp; </Text>
-            <Text> £{invoiceData.sub_total}</Text>
+            <Text> £{resumeData.name}</Text>
           </View>
           <View  style={styles.subTotal} >
             <Text>DELIVERY CHARGE:&nbsp; </Text>
-            <Text> £{invoiceData.delivery_charge}</Text>
+            <Text> £{resumeData.name}</Text>
           </View>
           <View  style={styles.subTotal} >
             <Text>TAX:&nbsp; </Text>
@@ -325,7 +328,7 @@ const invoicePDFGenerator = ({ invoiceData }) =>
           </View>
           <View style={styles.total}>
             <Text>TOTAL:&nbsp; </Text>
-            <Text> £{invoiceData.total}</Text>
+            <Text> £{resumeData.name}</Text>
           </View>
         </View>
       </View>
