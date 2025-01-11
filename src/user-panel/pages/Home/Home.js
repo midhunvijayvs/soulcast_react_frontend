@@ -686,24 +686,24 @@ const Userhome = ({ userData, loadUserData }) => {
 
   useEffect(() => {
 
-    API.get("blogs/?page_name=generic&section_number=1")
+    // API.get("blogs/?page_name=generic&section_number=1")
 
-      .then((response) => {
+    //   .then((response) => {
 
-        setBlogData(response.data.slice(0, 4)); // Only take the first 4 items
-        setIsLoading(false)
+    //     setBlogData(response.data.slice(0, 4)); // Only take the first 4 items
+    //     setIsLoading(false)
 
 
 
-      })
-      .catch((error) => {
-        if (error.response) {
-          setMessage(error.response.data.message);
-          setIsErrorModalOpen(true)
-        }
-        setIsLoading(false)
+    //   })
+    //   .catch((error) => {
+    //     if (error.response) {
+    //       setMessage(error.response.data.message);
+    //       setIsErrorModalOpen(true)
+    //     }
+    //     setIsLoading(false)
 
-      });
+    //   });
   }, [blogData])
 
 
@@ -719,8 +719,8 @@ const Userhome = ({ userData, loadUserData }) => {
             className="main-heading only-web montserrat-hard"
             // style={{ color: `rgba(255, 255, 255, ${1 - opacity * 3})` }}>
             style={{ color: `rgba(255, 255, 255, 1)` }}>
-           Oval
-            <br />Group of Hi-Tech Farms
+           Health
+            <br />for Those Who Matter
 
           </div>
           <div
