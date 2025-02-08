@@ -14,6 +14,8 @@ import ResumePreview from '../pages/ResumePreview/ResumePreview';
 import ResumeList from '../pages/ResumeList/ResumeList';
 import ContactUs from '../pages/ContactUs/ContactUs';
 
+import ToolsHome from '../pages/ToolsHome/ToolsHome';
+
 
 
 
@@ -121,6 +123,7 @@ const Layout = () => {
           <Route index element={<Navigate to="/home" />} />
           <Route path="home" element={<Home/>} />
           
+          <Route path="tools-home" element={<ToolsHome />} />
           <Route path="resume-list" element={<ResumeList />} />
           <Route path="resume-preview/:id" element={<ResumePreview />} />
           <Route path="contact-us" element={<ContactUs />} />
