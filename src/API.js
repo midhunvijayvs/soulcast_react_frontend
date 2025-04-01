@@ -13,7 +13,7 @@ const instance = axios.create({
      // Note: About content security policy header: it is to be added from the backend to the response header, not from frontend.
   },
 
-});
+}); 
 
 // Request interceptor to conditionally add Authorization header
 instance.interceptors.request.use(
